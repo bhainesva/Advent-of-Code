@@ -1,0 +1,12 @@
+{
+  "name": "Advent-of-Code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git@github.com:bhainesva/Advent-of-Code.git",
+  "author": "bhaines <bhaines@yext.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "0.26.1"
+  }
+}
