@@ -1,0 +1,368 @@
+Statistical profiling result from isolate-0x104807400-75446-v8.log, (326 ticks, 7 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+      4    1.2%          /usr/lib/system/libsystem_malloc.dylib
+      3    0.9%          /usr/lib/system/libsystem_pthread.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      4    1.2%    1.3%  LazyCompile: *<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      2    0.6%    0.6%  LazyCompile: *dirname path.js:1127:10
+
+ [C++]:
+   ticks  total  nonlib   name
+    141   43.3%   44.2%  T __ZNK2v88internal5Scope17ContextLocalCountEv
+     51   15.6%   16.0%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    6.7%    6.9%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    3.1%    3.1%  T ___guarded_open_np
+      8    2.5%    2.5%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    2.5%    2.5%  t __ZN2v88internal12StringHasher20HashSequentialStringIhEEjPKT_iy
+      5    1.5%    1.6%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    1.5%    1.6%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    1.2%    1.3%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.9%    0.9%  t _szone_malloc_should_clear
+      3    0.9%    0.9%  T _vm_purgable_control
+      3    0.9%    0.9%  T _mach_vm_purgable_control
+      3    0.9%    0.9%  T _mach_port_destroy
+      3    0.9%    0.9%  T ___malloc_init
+      2    0.6%    0.6%  t node::url::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.6%    0.6%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.6%    0.6%  t _tiny_malloc_from_free_list
+      2    0.6%    0.6%  t _mvm_allocate_pages
+      2    0.6%    0.6%  t __platform_memmove$VARIANT$Base
+      2    0.6%    0.6%  t __os_unfair_lock_lock_slow
+      2    0.6%    0.6%  T _os_unfair_lock_lock_with_options_4Libc
+      1    0.3%    0.3%  t std::__1::locale::__imp::__imp(std::__1::locale::__imp const&, std::__1::locale::__imp const&, int)
+      1    0.3%    0.3%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.3%    0.3%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.3%    0.3%  t _update_cache_for_file_streams
+      1    0.3%    0.3%  t _mvm_allocate_pages_securely
+      1    0.3%    0.3%  t _malloc_zone_register_while_locked
+      1    0.3%    0.3%  t _insert_node
+      1    0.3%    0.3%  t _copyPropertyAttributeString
+      1    0.3%    0.3%  t __read_images
+      1    0.3%    0.3%  t __os_unfair_lock_unlock_slow
+      1    0.3%    0.3%  t __malloc_initialize
+      1    0.3%    0.3%  T std::__1::__num_get<char>::__stage2_float_prep(std::__1::ios_base&, char*, char&, char&)
+      1    0.3%    0.3%  T node::loader::ModuleWrap::Resolve(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.3%    0.3%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.3%    0.3%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.3%    0.3%  T _os_unfair_lock_trylock
+      1    0.3%    0.3%  T _os_unfair_lock_assert_owner
+      1    0.3%    0.3%  T _os_unfair_lock_assert_not_owner
+      1    0.3%    0.3%  T _mach_port_extract_member
+      1    0.3%    0.3%  T _freopen
+      1    0.3%    0.3%  T _fputwc_l
+      1    0.3%    0.3%  T __ZN2v88internal5ScopeC2EPNS0_4ZoneEPS1_NS0_9ScopeTypeE
+      1    0.3%    0.3%  T __CFExecutableLinkedOnOrAfter
+
+ [Summary]:
+   ticks  total  nonlib   name
+      6    1.8%    1.9%  JavaScript
+    306   93.9%   95.9%  C++
+     12    3.7%    3.8%  GC
+      7    2.1%          Shared libraries
+      7    2.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    270   98.9%   82.8%  T __ZNK2v88internal5Scope17ContextLocalCountEv
+      2    0.7%    0.6%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.4%    0.3%  t __os_unfair_lock_lock_slow
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    141   43.3%  T __ZNK2v88internal5Scope17ContextLocalCountEv
+     83   58.9%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+     50   60.2%      LazyCompile: *<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+     50  100.0%        T __ZNK2v88internal5Scope17ContextLocalCountEv
+     50  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+     50  100.0%            LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      9   10.8%      Script: ~<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      9  100.0%        T __ZNK2v88internal5Scope17ContextLocalCountEv
+      9  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      9  100.0%            LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      2    2.4%      T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%        LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      2  100.0%          T __ZNK2v88internal5Scope17ContextLocalCountEv
+      2    2.4%      LazyCompile: ~resolve path.js:973:10
+      1   50.0%        LazyCompile: ~resolveExports internal/modules/cjs/loader.js:538:24
+      1  100.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:624:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:906:35
+      1   50.0%        LazyCompile: ~patchProcessObject internal/bootstrap/pre_execution.js:73:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:13:36
+      1  100.0%            Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.2%      T __ZNK2v88internal5Scope17ContextLocalCountEv
+      1  100.0%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:624:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:906:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      1    1.2%      LazyCompile: ~stat internal/modules/cjs/loader.js:130:14
+      1  100.0%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:344:17
+      1  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:359:23
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:624:28
+      1    1.2%      LazyCompile: ~slice buffer.js:586:12
+      1  100.0%        LazyCompile: ~toString buffer.js:754:46
+      1  100.0%          LazyCompile: ~readFileSync fs.js:345:22
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      1    1.2%      LazyCompile: ~resolveExports internal/modules/cjs/loader.js:538:24
+      1  100.0%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:624:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:906:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      1    1.2%      LazyCompile: ~realpathSync fs.js:1470:22
+      1  100.0%        LazyCompile: ~toRealPath internal/modules/cjs/loader.js:352:20
+      1  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:344:17
+      1  100.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:359:23
+      1    1.2%      LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:69:35
+      1    1.2%      LazyCompile: ~normalizeString path.js:52:25
+      1  100.0%        LazyCompile: ~resolve path.js:973:10
+      1  100.0%          LazyCompile: ~pathToFileURL internal/url.js:1372:23
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      1    1.2%      LazyCompile: ~moduleStrategy internal/modules/esm/translators.js:79:56
+      1  100.0%        LazyCompile: ~ModuleJob internal/modules/esm/module_job.js:24:14
+      1  100.0%          LazyCompile: ~getModuleJob internal/modules/esm/loader.js:146:21
+      1  100.0%            T __ZNK2v88internal5Scope17ContextLocalCountEv
+      1    1.2%      LazyCompile: ~maybeCacheSourceMap internal/source_map/source_map_cache.js:40:29
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1088:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      1    1.2%      LazyCompile: ~get internal/url.js:449:8
+      1  100.0%        LazyCompile: ~<anonymous> internal/modules/run_main.js:45:44
+      1  100.0%          t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:69:35
+      1    1.2%      LazyCompile: ~formatWithOptionsInternal internal/util/inspect.js:1631:35
+      1  100.0%        LazyCompile: ~formatWithOptions internal/util/inspect.js:1623:27
+      1  100.0%          LazyCompile: ~Console.<computed> internal/console/constructor.js:281:47
+      1  100.0%            LazyCompile: ~log internal/console/constructor.js:292:6
+      1    1.2%      LazyCompile: ~emitHookFactory internal/async_hooks.js:190:25
+      1  100.0%        Eval: ~<anonymous> internal/async_hooks.js:1:1
+      1  100.0%          LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:188:29
+      1    1.2%      LazyCompile: ~basename path.js:1153:11
+      1  100.0%        LazyCompile: ~findLongestRegisteredExtension internal/modules/cjs/loader.js:372:40
+      1  100.0%          LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      1    1.2%      LazyCompile: ~addJobsToDependencyGraph internal/modules/esm/module_job.js:76:38
+      1  100.0%        T __ZNK2v88internal5Scope17ContextLocalCountEv
+      1    1.2%      LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      1  100.0%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      1  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:1015:36
+      1  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:71:31
+      1    1.2%      LazyCompile: ~FastBuffer internal/buffer.js:943:1
+      1  100.0%        LazyCompile: ~allocate buffer.js:383:18
+      1  100.0%          LazyCompile: ~allocUnsafe buffer.js:358:42
+      1  100.0%            LazyCompile: ~tryCreateBuffer fs.js:318:25
+      1    1.2%      Eval: ~<anonymous> path.js:1:1
+      1  100.0%        LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1  100.0%          LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:188:29
+      1  100.0%            Eval: ~<anonymous> internal/url.js:1:1
+      1    1.2%      Eval: ~<anonymous> internal/util/inspect.js:1:1
+      1  100.0%        LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1  100.0%          LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:188:29
+      1  100.0%            Eval: ~<anonymous> events.js:1:1
+      1    1.2%      Eval: ~<anonymous> fs.js:1:1
+      1  100.0%        LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1  100.0%          LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:188:29
+      1  100.0%            Eval: ~<anonymous> internal/source_map/source_map_cache.js:1:1
+      1    1.2%      Eval: ~<anonymous> /Users/bhaines/repo/Advent-of-Code/node_modules/ramda/src/countBy.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1088:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      8    5.7%    LazyCompile: *<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      8  100.0%      T __ZNK2v88internal5Scope17ContextLocalCountEv
+      8  100.0%        T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      8  100.0%          LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      8  100.0%            T __ZNK2v88internal5Scope17ContextLocalCountEv
+      4    2.8%    Script: ~<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      4  100.0%      T __ZNK2v88internal5Scope17ContextLocalCountEv
+      4  100.0%        T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      4  100.0%          LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      4  100.0%            T __ZNK2v88internal5Scope17ContextLocalCountEv
+      4    2.8%    LazyCompile: ~readFileSync fs.js:345:22
+      4  100.0%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      4  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      4  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      4  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:1015:36
+      3    2.1%    LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      3  100.0%      LazyCompile: ~Module.require internal/modules/cjs/loader.js:1015:36
+      3  100.0%        LazyCompile: ~require internal/modules/cjs/helpers.js:71:31
+      2   66.7%          Eval: ~<anonymous> /Users/bhaines/repo/Advent-of-Code/node_modules/ramda/src/index.js:1:1
+      2  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1088:37
+      1   33.3%          Eval: ~<anonymous> /Users/bhaines/repo/Advent-of-Code/node_modules/ramda/src/compose.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1088:37
+      2    1.4%    LazyCompile: ~toString buffer.js:754:46
+      2  100.0%      LazyCompile: ~readFileSync fs.js:345:22
+      2  100.0%        LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      2  100.0%          LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      2  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      2    1.4%    LazyCompile: ~resolve path.js:973:10
+      2  100.0%      LazyCompile: ~realpathSync fs.js:1470:22
+      2  100.0%        LazyCompile: ~toRealPath internal/modules/cjs/loader.js:352:20
+      2  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:344:17
+      2  100.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:359:23
+      2    1.4%    LazyCompile: ~hidden internal/errors.js:249:25
+      1   50.0%      LazyCompile: ~readSync fs.js:493:18
+      1  100.0%        LazyCompile: ~tryReadSync fs.js:333:21
+      1  100.0%          LazyCompile: ~readFileSync fs.js:345:22
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      1   50.0%      LazyCompile: ~<anonymous> internal/fs/utils.js:541:42
+      1  100.0%        LazyCompile: ~hidden internal/errors.js:249:25
+      1  100.0%          LazyCompile: ~openSync fs.js:437:18
+      1  100.0%            LazyCompile: ~readFileSync fs.js:345:22
+      2    1.4%    LazyCompile: ~format internal/url.js:393:27
+      2  100.0%      LazyCompile: ~toString internal/url.js:442:29
+      2  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      2  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      2  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:1015:36
+      2    1.4%    LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1088:37
+      2  100.0%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      2  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      2  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      2  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:1015:36
+
+     51   15.6%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     51  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+     51  100.0%      LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:1035:18
+     51  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1088:37
+     51  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+     51  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+
+     22    6.7%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     22  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+     22  100.0%      LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+     22  100.0%        LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:188:29
+      5   22.7%          Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    4.5%          LazyCompile: ~setupPrepareStackTrace internal/bootstrap/node.js:307:32
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    4.5%          LazyCompile: ~setupBuffer internal/bootstrap/node.js:410:21
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    4.5%          LazyCompile: ~initializeCJSLoader internal/bootstrap/pre_execution.js:402:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:13:36
+      1    4.5%          LazyCompile: ~createWritableStdioStream internal/process/stdio.js:149:35
+      1  100.0%            LazyCompile: ~getStderr internal/process/stdio.js:38:21
+      1    4.5%          Eval: ~<anonymous> tty.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> stream.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> net.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> internal/timers.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> internal/source_map/source_map_cache.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> internal/process/esm_loader.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> internal/modules/esm/module_map.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> internal/modules/cjs/loader.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    4.5%          Eval: ~<anonymous> internal/console/global.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> events.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> buffer.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+      1    4.5%          Eval: ~<anonymous> _stream_readable.js:1:1
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:280:42
+
+     10    3.1%  T ___guarded_open_np
+      4   40.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      1   25.0%      LazyCompile: ~nextTick internal/process/task_queues.js:105:18
+      1  100.0%        LazyCompile: ~emitWarning internal/process/warning.js:89:21
+      1  100.0%          LazyCompile: ~initializeLoader internal/process/esm_loader.js:43:32
+      1  100.0%            LazyCompile: ~runMainESM internal/modules/run_main.js:40:20
+      1   25.0%      LazyCompile: ~Writable.write _stream_writable.js:292:36
+      1  100.0%        LazyCompile: ~Console.<computed> internal/console/constructor.js:221:46
+      1  100.0%          LazyCompile: ~warn internal/console/constructor.js:297:7
+      1  100.0%            t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1   25.0%      Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1   25.0%      Eval: ~<anonymous> /Users/bhaines/repo/Advent-of-Code/node_modules/ramda/src/call.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1088:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+
+      8    2.5%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      8  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      8  100.0%      LazyCompile: ~openSync fs.js:437:18
+      8  100.0%        LazyCompile: ~readFileSync fs.js:345:22
+      8  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      8  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+
+      8    2.5%  t __ZN2v88internal12StringHasher20HashSequentialStringIhEEjPKT_iy
+      8  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      6   75.0%      LazyCompile: *<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      6  100.0%        T __ZNK2v88internal5Scope17ContextLocalCountEv
+      6  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      6  100.0%            LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      1   12.5%      Script: ~<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      1  100.0%        T __ZNK2v88internal5Scope17ContextLocalCountEv
+      1  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      1   12.5%      LazyCompile: ~ModuleJob internal/modules/esm/module_job.js:24:14
+      1  100.0%        LazyCompile: ~getModuleJob internal/modules/esm/loader.js:146:21
+      1  100.0%          T __ZNK2v88internal5Scope17ContextLocalCountEv
+      1  100.0%            t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+
+      7    2.1%  UNKNOWN
+      2   28.6%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      1   50.0%      LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      1  100.0%        LazyCompile: ~<anonymous> internal/modules/esm/translators.js:111:62
+      1  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      1   50.0%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+      1  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:971:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+      1  100.0%            LazyCompile: ~<anonymous> internal/modules/esm/translators.js:111:62
+
+      5    1.5%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      5  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      5  100.0%      LazyCompile: ~stat internal/modules/cjs/loader.js:130:14
+      3   60.0%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:344:17
+      3  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:359:23
+      3  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:624:28
+      2   40.0%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:624:28
+      2  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:906:35
+      2  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:835:24
+
+      5    1.5%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      5  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      5  100.0%      LazyCompile: ~WriteStream tty.js:84:21
+      5  100.0%        LazyCompile: ~createWritableStdioStream internal/process/stdio.js:149:35
+      4   80.0%          LazyCompile: ~getStderr internal/process/stdio.js:38:21
+      4  100.0%            LazyCompile: ~get internal/console/constructor.js:168:10
+      1   20.0%          LazyCompile: ~getStdout internal/process/stdio.js:26:21
+      1  100.0%            LazyCompile: ~get internal/console/constructor.js:159:10
+
+      4    1.2%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      4  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      4  100.0%      LazyCompile: ~slice buffer.js:586:12
+      4  100.0%        LazyCompile: ~toString buffer.js:754:46
+      4  100.0%          LazyCompile: ~readFileSync fs.js:345:22
+      4  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+
+      4    1.2%  LazyCompile: *<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      4  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      4  100.0%      T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      4  100.0%        LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      4  100.0%          T __ZNK2v88internal5Scope17ContextLocalCountEv
+
+      4    1.2%  /usr/lib/system/libsystem_malloc.dylib
+      4  100.0%    T __ZNK2v88internal5Scope17ContextLocalCountEv
+      2   50.0%      LazyCompile: *<anonymous> file:///Users/bhaines/repo/Advent-of-Code/12.js:1:1
+      2  100.0%        T __ZNK2v88internal5Scope17ContextLocalCountEv
+      2  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%            LazyCompile: ~run internal/modules/esm/module_job.js:105:12
+      1   25.0%      LazyCompile: ~toRealPath internal/modules/cjs/loader.js:352:20
+      1  100.0%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:344:17
+      1  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:359:23
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:624:28
+      1   25.0%      LazyCompile: ~assertEncoding internal/fs/utils.js:80:24
+      1  100.0%        LazyCompile: ~getOptions internal/fs/utils.js:203:20
+      1  100.0%          LazyCompile: ~readFileSync fs.js:345:22
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1138:37
+
