@@ -1,0 +1,19 @@
+Hello, I'm trying to load file contents and am not having success. I would love some guidance on the correct way to do this.
+
+I tried using 📇 (https://www.emojicode.org/docs/packages/files/1f4c4.html#files.class_1f4c4.type.1f4c7-s.class_1f521) to load the contents of the file like this:
+```
+  📇🔤input.txt🔤❗ ➡️ binary
+  🍺🔡binary❗➡️ fileContent
+  😀 fileContent❗
+```
+but it just echos the name of the file, and doesn't seem to care if the file even exists.
+
+As reference for anyone else searching for file loading, I was able to to do it this way (it took me a while to realize the method to get the file length was not a method on the file itself).
+```
+  🍺🆕📄▶️📜 🔤input.txt🔤❗️ ➡️ readFile
+  🍺📏🕊📑🔤input.txt🔤❗️ ➡️ fileLength
+  🍺📓readFile fileLength ❗️ ➡ ️bytes
+  😀 🍺🔡 bytes❗
+```
+
+Before I figured out the second approach I also tried hardcoding my data into the code as a collection literal (~1000 20char strings) but that seems to increase the compilation time by a lot. (I let it run for ~10 minutes without seeing any output before I killed it).

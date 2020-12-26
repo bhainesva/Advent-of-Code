@@ -1,0 +1,61 @@
+📦 files 🏠
+
+🕊 📐 🍇
+  🖍🆕 letter 🔡
+  🖍🆕 min 🔢
+  🖍🆕 max 🔢
+
+  🆕 ruleString 🔡 🍇
+    🔫 ruleString 🔤 🔤️ ️️️️️️️️❗️ ➡️ split
+    🔧 🐽 split 0 ️️️️️️️️❗️ ❗️ ➡️ range
+    🔫 range 🔤-🔤️ ️️️️️️️️❗️➡️ numbers
+    🔢 🐽 numbers 0️ ❗️ 10 ❗️ ➡️ wrappedMin
+    🔢 🐽 numbers 1️ ❗️ 10 ❗️ ➡️ wrappedMax
+    🍺 wrappedMin ➡️ 🖍min
+    🍺 wrappedMax️ ➡️ 🖍max
+
+    🔧 🐽 split 1 ️️️️️️️️❗️ ❗️ ➡️ 🖍letter
+  🍉
+
+  ❓✅ password 🔡➡️👌🍇
+    🎶 password❗️ ➡️ passArr
+    🐭 passArr 🍇 l 🔡 ➡️👌
+      ↩ l 🙌 letter
+    🍉❗ ➡️ matchingLetters
+    📏 matchingLetters ❓➡️ length
+    ↩️ length ◀️ max ➕ 1 🤝 length ▶️ min ➖ 1
+  🍉
+
+  ❗️💌 ➡️🔡🍇
+    ↩️ letter
+  🍉
+
+  ❗️👿 ➡️🔢🍇
+    ↩️ min
+  🍉
+
+  ❗️😇 ➡️🔢🍇
+    ↩️ max
+  🍉
+🍉
+
+🏁 🍇
+  🍺🆕📄▶️📜 🔤input.txt🔤❗️ ➡️ readFile
+  🍺📏🕊📑🔤input.txt🔤❗️ ➡️ fileLength
+  🍺📓readFile fileLength ❗️ ➡ ️bytes
+  🍺🔡 bytes❗ ➡ fileContents
+  🔫 fileContents 🔤
+🔤❗️ ➡️ list
+
+  🐭 list 🍇 case 🔡 ➡️👌
+    🔫 case 🔤:🔤❗️ ➡️ split
+    🔧 🐽 split 0 ️️️️️️️️❗️ ❗️ ➡️ ruleString
+    🔧 🐽 split 1 ️️️️️️️️❗️ ❗️ ➡️ password
+    🆕📐 ruleString ️️️️️️️️❗ ➡️ rule
+    ↩ ✅ rule password❓
+  🍉❗ ➡️ b
+
+  📏 b ❓➡️ length
+
+  😀🔤Valid Passwords: 🧲length🧲🔤❗️
+🍉
