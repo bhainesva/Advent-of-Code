@@ -1,15 +1,28 @@
 import R from 'ramda';
 import { promises as fs } from 'fs';
 
-const fft = (ns) => {
+const getPatternForPos = (p) => {
   const out = [];
-  for (let i=0;i<ns.length;i++) {
-    const pos = i+1;
-    const pattern = expandForLength(getPatternForPos(pos), ns.length);
-    pattern.shift();
-    let tot = 0;
-    for (let j=0; j<ns.length; j++) {
-      // console.log(ns[j], "*", pattern[j]);
+
+  for (const el of inp) {
+    for (let i = 0; i < p; i++) {
+      out.push(el);
+    }
+  }
+
+  return out;
+}
+
+const fft = (ns) => {
+  const pattern = [0, 1, 0, -1];
+  for (let pos=0;pos<ns.length;pos++) {
+    let curPatternIndex = 0;
+    let j = 0;
+    while (j < ns.length) {
+      let curPatternVal = pattern[curPatternIndex];
+      if (curPatternVal == 0) {
+        j + pos;
+      }
       tot += ns[j] * pattern[j];
     }
     out.push(getTens(tot));
@@ -20,19 +33,6 @@ const fft = (ns) => {
 const getTens = (n) => {
   const x = Math.abs(n % 10);
   return x
-}
-
-const getPatternForPos = (p) => {
-  const inp = [0, 1, 0, -1];
-  const out = [];
-
-  for (const el of inp) {
-    for (let i = 0; i < p; i++) {
-      out.push(el);
-    }
-  }
-
-  return out;
 }
 
 const expandForLength = (p, n) => {
