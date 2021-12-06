@@ -1,8 +1,7 @@
 import { load } from "./helpers.js";
 import R from 'ramda';
 
-const run = (arr) => {
-	const lines = arr.map(dir => dir.split(" -> "))
+const run = (lines) => {
 	const counts = new Map();
 
 	let maxX = 0;
@@ -51,4 +50,5 @@ const run = (arr) => {
 }
 
 load("5.txt")
+	.then(R.map(R.split(" -> ")))
 	.then(run)
