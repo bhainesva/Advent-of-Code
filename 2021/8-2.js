@@ -1,98 +1,51 @@
 import { load } from "./helpers.js";
 import R from 'ramda';
 
-const decode = (ins) => {
-	const one = ins.filter(x => x.length === 2)[0];
-	const four = ins.filter(x => x.length === 4)[0];
-	const seven = ins.filter(x => x.length === 3)[0];
-	const len5 = ins.filter(x => x.length === 5);
-	const len6 = ins.filter(x => x.length === 6);
-	const t = diff(seven, one);
-	let m = '';
-	let tl = '';
-	let tr = '';
-	let br = '';
-	let bl = '';
-	let b = '';
-	for (const el of shared(len5)) {
-		if (four.includes(el)) m = el;
-	}
-	for (const char of four) {
-		if (char !== m && !one.includes(char)) tl = char
-	}
-	for (const word of len6) {
-		const miss = missing(word)[0];
-		if (m !== miss && one.includes(miss)) tr = miss
-		if (m !== miss && !one.includes(miss)) bl = miss
-	}
-	for (const c of one) {
-		if (c !== tr) br = c;
-	}
-	for (const c of ['a', 'b', 'c', 'd', 'e', 'f', 'g']) {
-		if (c !== t && c!== m && c !== tl && c !== tr && c !== bl && c !== br) b = c;
-	}
+const filterLen = len => R.filter(R.compose(R.equals(len), R.length))
+const findLen = len => R.compose(R.head, filterLen(len));
+const firstDiff = R.compose(R.head, R.difference)
+const options = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 
-	return {t, tl, tr, m, bl, br, b};
+const decode = (ins) => {
+	const [one, four, seven] = R.juxt(R.map(findLen, [2, 4, 3]))(ins);
+	const [len5, len6] = R.juxt(R.map(filterLen, [5, 6]))(ins);
+	const t = R.difference(seven, one);
+	const m = R.head(R.intersection(R.reduce(R.intersection, len5[0],len5), [...four]))
+	const cands = R.filter(R.compose(R.not, R.equals(m)), R.chain(R.difference(options), len6));
+	const tl = firstDiff([...four], [...one, m]);
+	const tr = R.head(R.intersection([...one], cands));
+	const bl = firstDiff(cands, [...one]);
+	const br = R.find(R.compose(R.not, R.equals(tr)), one);
+
+	return {t, tl, tr, m, bl, br};
 }
 
-const inter = ({t, tl, tr, m, bl, br, b}, str) => {
-	if (str.length === 6 && !str.includes(m)) return 0;
+const inter = R.curry(({tl, tr, m, bl, br}, str) => {
+	if (str.length === 6 && !R.includes(m, str)) return 0;
 	if (str.length === 2) return 1;
-	if (str.length === 5 && !str.includes(tl) && !str.includes(br)) return 2;
-	if (str.length === 5 && !str.includes(tl) && !str.includes(bl)) return 3;
+	if (str.length === 5 && R.isEmpty(R.intersection(str, [tl, br]))) return 2;
+	if (str.length === 5 && R.isEmpty(R.intersection(str, [tl, bl]))) return 3;
 	if (str.length === 4) return 4;
-	if (str.length === 5 && !str.includes(tr) && !str.includes(bl)) return 5;
-	if (str.length === 6 && !str.includes(tr)) return 6;
+	if (str.length === 5 && R.isEmpty(R.intersection(str, [tr, bl]))) return 5;
+	if (str.length === 6 && !R.includes(tr, str)) return 6;
 	if (str.length === 3) return 7;
 	if (str.length === 7) return 8;
-	if (str.length === 6 && !str.includes(bl)) return 9;
-}
+	if (str.length === 6 && !R.includes(bl, str)) return 9;
+})
 
-const missing = (word) => {
-	const out = [];
-	for (const l of ['a', 'b', 'c', 'd', 'e', 'f', 'g']) {
-		if (!word.includes(l)) out.push(l);
-	}
-
-	return out;
-}
-
-const intersect = (a, b) => {
-	const out = new Set();
-	for (const el of a) {
-		if (b.has(el)) out.add(el);
-	}
-
-	return out;
-}
-
-const shared = (list) => {
-	let out = new Set(list[0]);
-	for (const word of list) {
-		out = intersect(out, new Set(word))
-	}
-
-	return out;
-}
-
-const diff = (a, b) => {
-	for (const c of a) {
-		if (!b.includes(c)) return c;
-	}
-}
-
-const run = (arr) => {
-	let nums = [];
-	for (const r of arr) {
-		const [i, out] = r.split(" | ");
-		const code = decode(i.split(" "));
-		const o = out.split(" ");
-		const nnn = o.map(str => inter(code, str)).join("");
-		if (nnn.length !== 4) console.log(nnn, i, ' | ', out)
-		nums.push(Number(nnn));
-	}
-	console.log(R.sum(nums))
-}
+const run = R.compose(
+	R.sum,
+	R.reduce((out, row) => {
+		const [patterns, outputs] = row;
+		const code = decode(R.split(" ", patterns));
+		return [...out, R.join('', R.map(
+			R.compose(Number, inter(code)), 
+			R.split(" ", outputs)
+		))];
+	}, [])
+)
 
 load("8.txt")
+	.then(R.map(R.split(" | ")))
 	.then(run)
+	.then(console.log)
