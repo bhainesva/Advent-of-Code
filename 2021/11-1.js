@@ -2,20 +2,16 @@ import { load } from "./helpers.js";
 import R from 'ramda'
 
 const addPoints = R.curry((a, b) => [a[0] + b[0], a[1] + b[1]]);
-const getCell = R.curry((grid, [r,c]) => grid[r][c]);
 const boundsCheck = R.curry((grid, [r, c]) => r >= 0 && c >= 0 && r < grid.length && c < grid[0].length);
 
 const neighbs = grid => R.compose(
-	// R.map(getCell(grid)),
 	R.filter(boundsCheck(grid)),
 	R.flip(R.map)([[-1,0], [1, 0], [0, -1], [0, 1], [-1, -1], [-1, 1], [1, -1], [1, 1]]),
 	addPoints
 )
 
 const run = (arr) => {
-	// console.log(arr);
 	const ns = arr.map(x => x.split("").map(Number))
-	// console.log(ns);
 	let count = 0;
 	for (let step = 0; step < 100; step++) {
 		for (let c = 0; c < ns.length; c++) {
