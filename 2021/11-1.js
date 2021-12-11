@@ -11,14 +11,10 @@ const neighbs = grid => R.compose(
 )
 
 const run = (arr) => {
-	const ns = arr.map(x => x.split("").map(Number))
+	let ns = arr.map(x => x.split("").map(Number))
 	let count = 0;
 	for (let step = 0; step < 100; step++) {
-		for (let c = 0; c < ns.length; c++) {
-			for (let r = 0; r < ns[0].length; r++) {
-				ns[r][c] = ns[r][c] + 1;
-			}
-		}
+		ns = R.map(R.map(R.add(1)))(ns);
 
 		let flashes = new Set();
 		let flashed = true;
