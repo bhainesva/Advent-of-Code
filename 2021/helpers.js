@@ -3,6 +3,8 @@ import R from 'ramda';
 
 const applyEach = R.curry((fns, x) => R.map(R.applyTo(x), fns))
 
+const applyN = R.compose(R.reduceRight(R.compose, R.identity), R.repeat);
+
 const reduceDefault = R.curry((f, xs) => R.reduce(f, xs[0], xs))
 
 function l(x) {console.log(x); return x};
@@ -42,6 +44,7 @@ export {
   isSubset,
   allTrue,
   applyEach,
+  applyN,
   reduceDefault,
   reduceWithIndex,
   span,
