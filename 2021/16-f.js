@@ -2,7 +2,22 @@ import { load } from "./helpers.js";
 import R from 'ramda';
 
 const hexToBit = n => parseInt(n, 16).toString(2).padStart(4, "0")
-const parse = hex => R.join("", R.map(hexToBit, hex))
+
+const parse = hex => {
+	let out = "";
+	for (const char of hex) {
+		out += hexToBit(char);
+	}
+	return out;
+}
+
+// packet
+// {
+// 	version: 
+// 	typeID:
+// 	literVal: 
+// 	packets: []
+// }
 
 const readPacket = (bin, i) => {
 	const packet = {};

@@ -1,0 +1,1167 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /Users/bhaines/repo/Advent-of-Code/2022/proj ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
+; Using host:port 127.0.0.1:60310 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉proj.core꞉>  ; Use `alt+enter` to evaluate
+clj꞉proj.core꞉> 
+; Jack-in done.
+clj꞉proj.core꞉> 
+; Syntax error compiling at (src/proj/d2.clj:8:13).
+; Unable to resolve symbol: norm in this context
+clj꞉proj.d2꞉> 
+; Evaluating file: d2.clj
+nil
+clj꞉proj.d2꞉> 
+#'proj.d2/norm
+clj꞉proj.d2꞉> 
+#'proj.d2/moves
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+18512
+clj꞉proj.d2꞉> 
+false
+clj꞉proj.d2꞉> 
+0
+clj꞉proj.d2꞉> 
+false
+clj꞉proj.d2꞉> 
+true
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+16967
+clj꞉proj.d2꞉> 
+true
+clj꞉proj.d2꞉> 
+true
+clj꞉proj.d2꞉> 
+true
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+16967
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+15422
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+16967
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+15422
+clj꞉proj.d2꞉> 
+15422
+clj꞉proj.d2꞉> 
+2
+clj꞉proj.d1꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+; Execution error (IllegalArgumentException) at proj.d2/score (form-init17885135873231967121.clj:9).
+; No matching method indexOf found taking 1 args for class clojure.lang.PersistentArrayMap
+clj꞉proj.d2꞉> 
+0
+clj꞉proj.d2꞉> 
+1
+clj꞉proj.d2꞉> 
+2
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+15422
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+; Execution error (ClassCastException) at proj.d2/score (form-init17885135873231967121.clj:23).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉proj.d2꞉> 
+; Error printing return value (ClassCastException) at proj.d2/score (form-init17885135873231967121.clj:23).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉proj.d2꞉> 
+(["A" "Y"]
+ ["B" "Y"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ["B" "X"]
+ ["B" "Z"]
+ ["C" "Y"]
+ ["A" "Z"]
+ ["C" "X"]
+ ["C" "X"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ["A" "X"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ["A" "Y"]
+ ["B" "Z"]
+ ["A" "Z"]
+ ["B" "X"]
+ ["B" "Z"]
+ ["A" "X"]
+ ["A" "X"]
+ ["B" "Z"]
+ ["A" "Y"]
+ ["A" "Z"]
+ ["B" "Z"]
+ ["A" "Y"]
+ ["A" "Z"]
+ ["B" "Z"]
+ ["A" "Z"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ["C" "Y"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ["A" "X"]
+ ["C" "X"]
+ ["B" "Z"]
+ ["A" "X"]
+ ["B" "Z"]
+ ["C" "X"]
+ ["A" "X"]
+ ["B" "Z"]
+ ["A" "X"]
+ ["A" "X"]
+ ["C" "X"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ["B" "Z"]
+ ...)
+clj꞉proj.d2꞉> 
+; Error printing return value (ClassCastException) at proj.d2/score (form-init17885135873231967121.clj:23).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉proj.d2꞉> 
+; Execution error (ClassCastException) at proj.d2/score (form-init17885135873231967121.clj:23).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+; Execution error (ClassCastException) at proj.d2/score (form-init17885135873231967121.clj:23).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉proj.d2꞉> 
+; Execution error (ClassCastException) at proj.d2/score (form-init17885135873231967121.clj:23).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+1
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+3
+clj꞉proj.d2꞉> 
+(4 5 9 9 1 9 6 8 2 2 9 9 9 3 9 9 4 9 8 1 9 3 3 9 4 8 9 4 8 9 8 9 9 6 9 9 3 2 9 3 9 2 3 9 3 3 2 9 9 9 ...)
+clj꞉proj.d2꞉> 
+15442
+clj꞉proj.d2꞉> 
+#'proj.d2/parse
+clj꞉proj.d2꞉> 
+#'proj.d2/score
+clj꞉proj.d2꞉> 
+15422
+clj꞉proj.d2꞉> 
+15422
+clj꞉proj.d2꞉> 
+15422
+clj꞉proj.d2꞉> 
+; Syntax error compiling at (src/proj/d3.clj:7:10).
+; No such namespace: str
+clj꞉proj.d3꞉> 
+; Syntax error compiling at (src/proj/d3.clj:7:10).
+; No such namespace: str
+clj꞉proj.d3꞉> 
+; Evaluating file: d3.clj
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+"Part 1"
+clj꞉proj.d3꞉> 
+["BzRmmzZHzVBzgVQmZLPtqqffPqWqJmPLlL\nhpvvTDcrCjhpcrvcGGhfLHMlLtMCqflNlWPJlJ\nhGjhncHhGnhbTHczBBZVVSbRwgSgRV\nrWVQjPQQjGRWNSrWrPjcptwBpqqJBtJBBcZgMdtq\nzzmmpzfTCFpTlMlJJwBgMlqMBt\nTvLszpbhhTLmsnRQPDQGWDWRvQSR\nzGzvLlGlQHLGBQZlhBWhdjRdmdWRcjPj\nfTJNfTfNSRWPhjdjfj\npbsbVVnpSnbVTprnbqqrzvLLgQlGLPLHll\nZCCCsWvNvmsCsCmZLZmgMLRpQMhwQRpQRfphfprpTfpM\ntlncPjzlndctbzcPPBcjwDphwrfGGDffbDRpDTGG\ncdqnddwzqjNVWVLZZLZq\nDTLbDbRrlQbwhhNrmmfwdt\nzzMJMzjCjJJjvLjMPJpcgPpzfhHdfqWcqddwtwfqdttcNtdN\npJCzVpCvDZBLsVRQ\nSTzBBbJzRRBZBRTqCCsfZLtNNLClCsfh\njsQnnQjjHcvQFrcPwCmtLCNlvDfftfff\nsGFscMQQMMpqzqbMbd\nQlNDWGsjQjgQllWQsbtzqTJczTJcbFmmFJJP\nMhLrhgLVndRmzJFzVqqJqP\npSLnMdwhwdRZRSwhLZwLhdGWQjlsgWjNQWWSvgBsWDlj\nTHjSRFSddTjdBTcPLcVVvVBw\nGzWnWfndWfznDfsnsBsPVwVwPPLL\nzNflzJWqqzQDdSStHNZNpFFtbj\nFSzDmsFSFlDlBzqVjqHHjHHpVgHLbp\nrTrTtTQQntRQnQJQgggHZttVgHLBLhZL\nWTJJRRQCRRJTRdBCRdvRNDFSWFMPmDlPPSsNPSzS\nWQldlMtMVQgVMQHnDGbHGGnRnQmD\nrqcZPrCFjmHlbGjZ\nzSScchqwchBzTzFzhhSlcCwNtdVWWJgsVdMtWNgNVWTJTd\nlMZqjMWllrTTspjprWWSSwgWNSVNDmWGVwFwgN\ncdCCdLHcnndHJnmCRntLBnRzDvFNtNDVzgSgwDgFNVzFVv\nBRLcCCJCmJdcRhfjPPZphrlrPqlZ\nGdGqcrrZGDrvDJJqJHcBvmFFgmFMMgMgBtMLTssLmF\nNbPVPDlljPmTmsTj\nVfQDhflCCRWdcrQwJvvnJv\nRLcWgLCqqPQLcqZwzHgwmmrmmtgwTw\nDhbhNrMpnJSDJwVTHmmTVnTTVj\nlrsvblMDlcWcfQPQ\nPVldlphHwGwJJGdjZZWsRbbsGsNWrWQbNbQR\nSqcDvTmDLtfmSmtqppfqzTgTQBrRQsbCFWbNNFQFBBrRbLNb\nMgtmTgtfpqVlnVddZMwV\nBdmfmPBPSbSNdGSdvWrwcZrccZPPcZnH\njzzLsjsMRlQQVHwswvvZrCHrrT\nVqhzVFzplFlpLwpMphLRQQVRmSqgbdGtNJBmNSmgGbtggSgt\nDHVpNZjdZjFZWVFHpvFvzmlRzPnlfznFRz\nlrTBTsBwwMbrrwLPPfwGmGzvRf\nscrtMhMCtJBBBclbHdHttWZWDSqDSjHj\nwzqsPmqsbsfqBwPMNRMMZcZmFFNtZM\nCgCnhlvvLJgcRFNNBdCpWM\nQnQrVgHSvVHjbjTGBbbTHb\nHdrVrdqFDdZVmHgRmDRFHMnTdTssMGnLnPJLbPTbCs\nSczlScjwcNzplNzQSSfjwQSrTGGsbTsnTCnGTMCMLMGGbN\nwQlfjrhfhQFHqZhRZRtD\nRsfJDGJvzPNcjpddSWJWMd\nLLCbBCwCrCmVVnrmhQFmbVhdcdlWpjZzSpMdWSpcWczSBj\nrrLCbTwnHTvzvNGT\nwPhPhbCqqSCrtJDlqvlrJr\nRVVZddLFRZZcQLvJJtzptlgPJp\nTVQRZGVncFdTGWZdCNShHhfPNwwsWPwb\ndzLVzPSgrgDDDCMSMLLPwFmdTTcsvmwNwjNsHcFF\nnWBGntQfGNGBflWBBqlpRQGbWFvjwsbsFswbvTHjjbmHTc\ntBNJBnGBflQnDPJrPhDgrPVg\nVtWztWtqpqzWpWzqjNRjNpWTmrrmrSbnmJwSJwnMPrCSJVwM\nsDHsBDhBdsBZGcHvLHDLhhCSnRSwCJMZrPbmnMbJSCSR\nccLRhgsLBdRsdHNTFFNNgqTglqzF\nhztlmDhPhgPlPNNgmZMCbmwwQjcwjjwMjVCd\nRSJRrRqnqQJFqvnTGrHCcHHCCHHbHHMcMvdM\nqGJsnQTRsStsftPlhPNl\nBFFBLPRCwsLwhlPlRmhcGGrbmmGjfNTTnp\nVJMVpzgqggJnrjmjNcMjmT\nVqdSZtQgZvtdzqHqHtVZdVQpCDWWFdwlRPDpWPPBCswlWD\nfCWCsjPzcbzwRSzVTzhhDLqvdg\nTmJtrNJrBLSLJqgS\nptNTQFHrZlnpFPwsWMbRjCpcjR\nnJmQNCmbmlllmbClbfMLjMFqbGBsdLFq\nZcgTWcTnMqqMTBqF\ntPgctSnPctZZgDWzZgQHwNmHlhlmzlQhlJlw\nZpTCwpffdslvgShCBhqhRz\nFDMPnNFNmBPzvRPRBg\nnNgMrnnDGjDmJMmnFdZTTsdsrZrslcwcQr\npTmczpCldcdDDnPttpvWSqbpJf\njgjRZMGHhGLgQrjvPWzPJgJvzStbbq\nLGNLLNBBzcDFCBwwFC\nnJTTqnrNvTzNMzzNfqrTPrJnwpwPpZpsHccZVsBRpcVHwpcp\nbgDhgbghLWmFmStctVpZtBCVCCpfZp\nLLSgLGSjggFGbSSbmMnrvqvzjfzTNrJrqM\nRRpDmmPMTjwfGmJQgQ\nWsNscdnvvdVZFVnnrZbjjflwljlbzfGFjQjq\nNnLZsNnrrVVVcvdBLTPCPCRMwhPMBMPhCt\nlbVvzngGJnVbJHpHtHNPpdSQvc\nTsMBswFZsWMWBZMNwPtNNtRNHcNpSQ\nCcZCTrZDsjZTsTsshWhrWrTnfgbLDfJzVVLVVlgfnzfVGV\nJzTTRtJRZWmWjrMHCT\nDDFGlLGcGlSSSLsFGBspPBmNMBHMghmWNmWjWCmWtH\nnSSpnbsGlLDnpPsSSspFtVvffRQdVzqvvbqdfVQwRz\nsMhzszlHHDsWbthHDqsbJjpLNtmjVJmVLLVLVLBp\nnrTPrGwfPLdprzJzdL\nwgPQcTGGzgccwCgnRwgRChFhlWSDqWWQMWhssSsMQl\nNSNmwtpSpCpvMphCsr\nPHcRGPLJMrsvzsqG\nQHjbnRMcfbPbQZmlZgZlgBBQ\ncPRPbhQjbQRdtPQdLqLHqzFZjCFCqLjC\nmmfsnnwrfvwrfSNZFzHHLDCFNlLlqDlN\nwsmrwswwGTffMrBnmQttJtcMZQQtPJPbZc\nMvBPDDRRdnnvHPCHZLHZsFLL\nrmJcbVqbcjWwWjQHLzTZFTHSzFrpsz\ncmwllVqqGJbVVVmmqbQcmgRnRvGhGfgDRDZBBBvRdd\nnMvMhMnvhnbTZWSSZgHmGJDFmmNDzBmbNmdGBN\nrCsPLRCssRjrLLsrLlwRVrcNJQfDQfdBmmfNBGJNzmDPfB\nCRjCpLltgtJgJJWq\njshCzJpjzTPpmCWvSlpfwHfSWglf\nLQMMNMnHtDtLVRvwwgRWlldgWD\nqHVrQNHVMFQtrrBBQMBcrrZsZbzCZhbbJZJsmmsmFPTC\nJZQZnsQNMqTngZqJBVfBfPPVBNrwvfPw\nSSmDstFjpDpCszDjcLLhrPVlGlrGGVBwrvwVPt\nFSssFcLjFjbmFFCzjLcFLRDnMJnTHRnZZTdWqZZWnMnRnZ\nGbHRHpldwGMpWhHpCMBlCbRdVSLhnqJLSrDPLPPLPDqVDrhh\ngvjWWQvgZFtQFFNqLnVnDnSJzzztDD\nZccccfTsffHdWWdRWwsw\nClCtbHMlnnPPlszV\ngSDWSLgWQWQJJNWqgtQjPsnfcdVcLVdVdzfzVzff\nWQgqtFQgDgQSFqJhqhSJvNDRrZMZHwHMCbZhTpZbGHMTMG\npZJZlCQtHFhPfdNfCh\nzcmLSVczwcMcLDNFHdLPhPWH\nszvVVnBmnTGQtHTQ\nRVVCNDlNGzlGZqHGHWqWhGqQwH\nZFLFTmpLvvmSqsbb\nTrfpBfJpJMlnnNfNZD\nqHHlDClHhltMqQsHDhHslGznwdTnzzwDGSdfnwGnwG\nmZRNcNcLLPNPBFFbbPmLmbZFSCVfJJTVndVfSwnRzznfTwCS\nCcCWFbbBLCWtgWgHjghqvv\nTjbzlnlFmfqCFFVVCRWr\nPhMcLpPDtMLpwPDvLPJbMhSgVCGqggVqQgCqCgCgSWvv\nbtbZbNZhJDJJhDtwtsTTTmBzzBBmlNlmHj\nFqhjWtqlqmmsnFPTCvMCQMTTCjQd\npfffRfLpgrgGgzrNVzzpGVzRCdMCPJbwwcVMbQPCJVMVdbww\nDGGDZRGrHggzSsFQnnWShmtH\nvtHVVMMrvVMVrSHvLgvlHcZFCnRCZcccZtRRZfJFCJ\nrdDjGsdTQDcNZfdncCRR\nrBDsTwBbjbmbbQswswPhqVmmSvpVhlvvqMhHhh\nvGBLrqMNvqSLBvvrNbllLHfwStWWtFttccjtRtjtcj\nMhCDJmhMDzmcRRcjzWfztH\nZQDmDhVVCQbBVdVNMvvv\nptCtCzhWPWptnhVzzpGZbZTjTjVjFGjVFgVl\nfQswRRffmRqZlgrqqFjjSgGg\nHwsQDNNsDsmRLLHmffsfvHptBnhtzCvhWpZWBdhnMdCh\nRlHzzTqczBPfbnvcpB\nwVtNwpSZstppwwMsZhsdnLvnbtBBmbnLFFdnmF\nWNQJMVWsZWwGJWhhSNrQzlgHrDCgQRHpCHrl\nRrZWpJZRrZpdTGstlchLGGlLMd\nNqjDPCQPnQCSvtMzSLhhjM\nnQVQDDDDfwBwNCVCNVFNpWpgJgrRTmLTmTmgRTWF\nSHMcrMHpcjGcjSrMMbvSvvSvwFTLJwJNtFGFWJNtDLFTLfWN\nzqRnPfzQCRzqsmRPzznhszzLtLwQwwFTgWWLDLgWFTwTNQ\nqVPZmRZhsCZPhZlRCqRRRCbfpccMBjvMVjdHjjMjSvdf\nVVQdHwBZLVltlddtBczhrzvGcWWFRwgsFG\nTDTTTqqTSSqjqnmTmPqPPmTmGhRszvsrzsjRsccgzrRzgWGF\nDpJPqpWqHbZpllpt\ncCSCFsnnZFnscDtNdJFJtJtdmb\nVgBqBsqRrHtNdzmNrt\nBGLLVVjRBsqPBfsGwPsMfSSZCSfTZTZQpSphfS\nplCHCHlgglHHGpNbtngNrDvBDpfQDBQfZDfWZVrr\nmTmMLhRfwhsLPQvQZDMZQBQWMB\ncwsssmqRTFFfFgtbCtGl\nLQPPrCPnMZwqtRMn\ncWTSlJWlcplJdDTdGdpDlGcGgqmtwwZtqRrNRRmRdNZqmgNq\nGSJcJSjsjTpsvWGWBHLLvVVBBBrFrzVz\nNVPCSPMNDSNFVSWCsJJJmpGmZZGLLcpZLHGGtsHt\nfwzlBBqghqvzqqlDrHbpHjZHmGZbLZrHLb\ndnBgnDqQvwRnSnnFMFMP\nBCbPsFFwCRHmDSBmWnvDDj\nphhZVzdpVfQZphhZpRhSVnjmrcvvnrWtDrvWDS\nTfQJMfLphMhJdfdzpQJRTPbwHHNlgbGwsTGgCP\nttWLlnnvnNnBBtlTqWlpvpndQdZsQQFssFDdsRFdVdRNFQ\njSgrScrbGZSGrrCGsFVMssFsPPFcDDMV\nbzSmJbfCZCbzLwllflwqtvvw\nzmFTJwFLPmzLztmjDzTJwfNrdFNrFppBSNRGNGdbrpBR\ngqlhWQgsZMsvqMlMMvsvqsNlLbcdppbrRpdbbcSrrbbr\nvssCgVgCsggZQZCgsnsqWgWvfJPDLwffwTPPmzTnjTPmPmwJ\nSpcRTPQLBLWpNNzjmmwwwRrR\ntGlfvGhfnbDlbqlChnfFMrwsmwNssTMHMHjFwv\nZlhtCtffCdWcZWZVVT\njTTCcWHWJNgCGTzTmnzrmnGn\nBwRRbFvtvvQmJJFMpMJr\nZBBwLvqbBZsRsbVsZSqbcZdJjHHjhfPCJfJfHhgc\nVrnDSvvrLrfTdTLGfdRp\nzcJzmcFcHGfdGmWTVd\ntHsMhwPVctccHFHFcbSDbbPjnNbBnbvBQB\nQttWQwLTnLnWTtnffnLQSBFVjNvBjBFNgMdCsVWsjv\npDqcmmRPHqgVBddjvN\nDcclzbcbPbJLnNTfnw\nplRcpsZDGlGZvWvMCNcLtttq\nSrfrwSjSVrSjwbmSrHzmHJCQQPQzqttNNQJMzJtqMW\nwSHVnfHfWwwHWFVfSnfgmmRsslFZZDBBGZsZsDTdGRTp\nqSFQSgQNgQBrBHHcrW\nVTmjVJLTwlTmwTVmsMJMVlJmPvcbvvbCBbGBPjGvBbBGWcbb\nDnJTZwmnZRhnpqNdWt\ndTVHjZLLZDVCfVHtLDDjQbscjWbSJMJPjsbWWb\nFnqrnmzzFllmsWwtsFtQMMFc\nlmqzzzngGmlNNBqGllzlBNRvptHHpTCHpDLpgDZdgvHvDD\nsdRZQbCfZTSTdlfTZCffccWPHPPcPPwLwctRnLWn\nBBJDzFVgCDrCJrqDJJhqJVVMLPHwcctFwcWHHGLcwGwGHnWc\nghpJgqqjCZbQdZpd\ntbcpzbHSszcHBgqHGZgJJJhhww\njfvdvRTffQQrrFCRFTnGwJRqNRZVpJGZLZggLh\nnQTjTnMndlTdQFMvnrClCnpzmzDtbbmBbcPSzzlmmtzP\nBqBqTCSTcqHsJHHM\nWWPGVPLtzVgWtjWPGzVjzVGcbDhPsRbDcsbJwNRswRDRss\nVQfWjfLFGWLjdFfVzTZZpJTpnmlTrSQlBl\njLNsZjqSHCsGdsmpsm\nMvnVFzWMwMVWzfnVDwfBMfnnrCtdtPmPlRrdrJCJrtPDrrPD\nzznfFWwMfMfFMwVTMQFnQjhjgjSZhCNbLSTcHHgbbC\nGGtssttVmvnnGNMQrrVzgwVrCWMz\nFdhfhhcCDhHLfzclZMcrwcQMZM\nHHqqCBhHSSpdmjGqmGjtjtjj\nbbQLtGMQQtQRQtrDtGprrrbCqwplZhhqSqmdwvdzqqqhSmpS\nFsJjJBfnsJcFcFfjVPjWBzldqhqnlZZZzzhmnSvSnm\nJPcFfFWjFHJVVsVjPVscsDlLNRHGDbLRMRCDNrCGbG\nJdMdlMRJnTwdvcjv\nCDLHbNSzzLFgHvnTjrswBNBTNT\nQgbvzSFQmZQPQQRW\nNTBrNzrpjjjCwGbB\nFRbQlcvFvcRQQlRsMlRRRZjwCqMwjmjwJZdLJmjCZC\ncVPPQcvlWDNhrbPz\nVdbVtbbZJdtJVVdDVZmTLqqTSQvNLjjDShhvSG\nzplpnBnFpnrrlghGNpLNqHvqvjNj\ncWncllnlPFWzcMwtWWtsVLVRmJWCds\nShLSTnZnTSttTSbLQdfSZTMwcDHwwcHnJvDHnlnlclMM\nNmPMsssRrVwjDclHJwwR\ngNNMWGzNmqGdtfZTbGGb\nsWNNlRHnmJtmntJt\nbrbbBTbbFbCbqqGgBTrCfmQVVZfSSQQSVtJZSrVZ\nbbFqvbDvvGGLGbCCtBGDLbLlcPNHhhccPNcdPPchlsdR\nDCFvDvnCnNfMBmMMslDZML\nSQQQJHwpSgJSJHQWSWHqJWWbmcBBBLLTsmhhTcZbMhmlshcb\nRJRgpJHssgwSQHRqsQPGGjjtNCrrFvvnFjjPrP\nmThmsgjzTPjMpcvtWP\nGNNBVqVGNZbbNbNqqZQVNVNbWcpdtMCcpCtMWCdCPpQccmpp\nVSmNrmmbBfZVlsrssrLTRhRhTn\nTdmCvLDCpTRNTdFbbWnnSWCfhjbbzn\nGrrMsPVGcQHBGMbhjjSgWfHHDbjb\nBPBVqqrQPsQqwrrmmmJdRLDDqFRplT\nfpDDJljDlCfDTjprjrfbddWthCSCtdPPQFhSSSWW\nHsLZgMGbgBBsNzMvGbdVtVQzFRQSthhFPdtP\nsMBmGBmbNvLHGMnrDppTcJmcjpqljf\nptSpSJQqpbNGGDDhcMWrlNHcZZWWls\nzRLRRRjvvgjHMMsMpWpc\nvmCPLCgwvwdnCzmvLbpTbVQqJJPbJPpTVq\nTJCfhhJVFffrJJQQllNWcvWhwvWD\nGPSGjjpLslBbpLpLqqqPDvdwvwvNzQWGzDDNdzGN\nmsbRjbpPqsRpHnlZrmJlnVHT\nGGfFsCCTvGDsfTTrhsCMMzptZJMdpdgtrpdMcV\nLBlwBHPSqjwwlVggHpnMZcVHMt\nZlZZlBbRPGGTGfmRsD\nCtCjbVvzQQZTWVdd\nMlSqWlmsmGBSHJHTDFHZ\npcqsmsplwsqclwRtRWgtRnPPvb\nzCrzCrsdjrhGDCFqGDjRRPtpWfQQcpfQZcCZPp\nVSVwVMgLHHLTwMDTMMVnbWPRZQRcRQPptWnpbZcb\nMNBBBlSMvLVwTlVTFdNdhNhFsqsGDrzm\nrBLWTwTThWwVVDTwHBsZZWppvpGtpptppmRvFFFMFMfL\nqPPNCCbqcbcNqbqQjjJQqzjRpptmlpMGmMlJtftmtFHpMt\nQnCgzzQbbQqPcPQnncbdQdnVTwDssZgrShBTVgZZsBSDHT\nPFGJFqnfqmPgFJQPWdbLdpDRhbphWjDm\nrclNHvcrzCNwrWRprjdMMMph\nwsZHwZNvRRQsQqBV\nLqlGCPlPLTCPqqQlpqLlWfBfWgcHNRJRfWNsncGH\nVVtdwVtDDdVmhrdwSBmjbdzNHgfgJnNnsSnHsNffHgRsgR\nwVzhbjmDbDrwjdbztFDDthMCvqPppZQBQLZQTqTvFTvZ\nBnQnQFwRmRwmwdBSFDFnmSDVLCJTCTppVVmGLVTCLcgVpC\nZlWvhvZjNrbNvqjNhlfPfqjCGHrsspggTpVLpsJCpcJVgg\nvPzNvqjWhqFzGSnRGMDG\nwZnMZzzZZchDRtVsqtCtwV\nWmWpWWmPPWrmrmBmWrTlTFPNVqVCRSDCQHcqVTtTqsSDSTSD\nPrppdFlWWlfrWmpWFffrdcGjJJGggnnhZGdLLgGGndvz\nFShHNmNhRhNJmBnQBQJrmP\nVTgzDTjwfffwzDvwlcczzVSJbQlBQSWBWCnPJPbJWWbC\ntzSVtzvSvGSRZqqFMNtpRR\nhPZhGDZpnCGtDhznjmLmdJffdNzJ\nglwsSrQwBvLdgLzdcj\nQsRbHllzzlHwHlBszWlTBFbpDPMhbPDVGpGFpPtFPp\nSRjStRDctgDSBzLvPvNrDhmPLr\nQqTHGTPJmmHmhNmH\nTGQZsTqFnQZCJTPsnJnZQMjVRBVtcVRSVRBlwccSCtBS\nbbsNsvsvnNPTRRllbblLqhtQCqQSLCGGHSqHNC\nwFpzFgqVzqVJWFDwqJDmSBBmHBHhShLQhCGSBCGH\nMJVpFMqgwMqRRbZsMbZMrP\nPPdDhvNDQdmgQPZmQVHHtHGGWVGbffWGvs\nMMLCTRRLlLclTLRMRLCwMLHWVctbVVHWWWFfVjVGsFWW\nMRSMMlpTJRqClBCRqBDnzqgQPnqgznZPZqbP\nMrMNPNNpjvdprWtrpMsthqBfqlnfqcGhVBqFRcnqFG\nQbDgSSQbgSDDmDVmlqSCRllRcFqnqfBl\nQVJbVmwwDQbzVTgbppNJNMWNjNNPrdpM\nWwJJNbtHfpLpVgZZPVFhZh\nvmmqlDvRvRfqBSrlzmmMjRBhcVhQVZhVghCQQQQTcTrPTP\njSqMmqRzMDDjvqlBqsBMBmmwGNJwJnwLNfbGwddswnJtJH\nRLgRmRggbvbzzPmmRNmzsQWFtSGNtwSNQnntFwnnCw\npDBrBHpHhlldphHBHhJVFSLnWWFJttCtQSttSS\nhfHrpphHBppfTvmzgMmbLbgf\n"]
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+["BzRmmzZHzVBzgVQmZLPtqqffPqWqJmPLlL"
+ "hpvvTDcrCjhpcrvcGGhfLHMlLtMCqflNlWPJlJ"
+ "hGjhncHhGnhbTHczBBZVVSbRwgSgRV"
+ "rWVQjPQQjGRWNSrWrPjcptwBpqqJBtJBBcZgMdtq"
+ "zzmmpzfTCFpTlMlJJwBgMlqMBt"
+ "TvLszpbhhTLmsnRQPDQGWDWRvQSR"
+ "zGzvLlGlQHLGBQZlhBWhdjRdmdWRcjPj"
+ "fTJNfTfNSRWPhjdjfj"
+ "pbsbVVnpSnbVTprnbqqrzvLLgQlGLPLHll"
+ "ZCCCsWvNvmsCsCmZLZmgMLRpQMhwQRpQRfphfprpTfpM"
+ "tlncPjzlndctbzcPPBcjwDphwrfGGDffbDRpDTGG"
+ "cdqnddwzqjNVWVLZZLZq"
+ "DTLbDbRrlQbwhhNrmmfwdt"
+ "zzMJMzjCjJJjvLjMPJpcgPpzfhHdfqWcqddwtwfqdttcNtdN"
+ "pJCzVpCvDZBLsVRQ"
+ "STzBBbJzRRBZBRTqCCsfZLtNNLClCsfh"
+ "jsQnnQjjHcvQFrcPwCmtLCNlvDfftfff"
+ "sGFscMQQMMpqzqbMbd"
+ "QlNDWGsjQjgQllWQsbtzqTJczTJcbFmmFJJP"
+ "MhLrhgLVndRmzJFzVqqJqP"
+ "pSLnMdwhwdRZRSwhLZwLhdGWQjlsgWjNQWWSvgBsWDlj"
+ "THjSRFSddTjdBTcPLcVVvVBw"
+ "GzWnWfndWfznDfsnsBsPVwVwPPLL"
+ "zNflzJWqqzQDdSStHNZNpFFtbj"
+ "FSzDmsFSFlDlBzqVjqHHjHHpVgHLbp"
+ "rTrTtTQQntRQnQJQgggHZttVgHLBLhZL"
+ "WTJJRRQCRRJTRdBCRdvRNDFSWFMPmDlPPSsNPSzS"
+ "WQldlMtMVQgVMQHnDGbHGGnRnQmD"
+ "rqcZPrCFjmHlbGjZ"
+ "zSScchqwchBzTzFzhhSlcCwNtdVWWJgsVdMtWNgNVWTJTd"
+ "lMZqjMWllrTTspjprWWSSwgWNSVNDmWGVwFwgN"
+ "cdCCdLHcnndHJnmCRntLBnRzDvFNtNDVzgSgwDgFNVzFVv"
+ "BRLcCCJCmJdcRhfjPPZphrlrPqlZ"
+ "GdGqcrrZGDrvDJJqJHcBvmFFgmFMMgMgBtMLTssLmF"
+ "NbPVPDlljPmTmsTj"
+ "VfQDhflCCRWdcrQwJvvnJv"
+ "RLcWgLCqqPQLcqZwzHgwmmrmmtgwTw"
+ "DhbhNrMpnJSDJwVTHmmTVnTTVj"
+ "lrsvblMDlcWcfQPQ"
+ "PVldlphHwGwJJGdjZZWsRbbsGsNWrWQbNbQR"
+ "SqcDvTmDLtfmSmtqppfqzTgTQBrRQsbCFWbNNFQFBBrRbLNb"
+ "MgtmTgtfpqVlnVddZMwV"
+ "BdmfmPBPSbSNdGSdvWrwcZrccZPPcZnH"
+ "jzzLsjsMRlQQVHwswvvZrCHrrT"
+ "VqhzVFzplFlpLwpMphLRQQVRmSqgbdGtNJBmNSmgGbtggSgt"
+ "DHVpNZjdZjFZWVFHpvFvzmlRzPnlfznFRz"
+ "lrTBTsBwwMbrrwLPPfwGmGzvRf"
+ "scrtMhMCtJBBBclbHdHttWZWDSqDSjHj"
+ "wzqsPmqsbsfqBwPMNRMMZcZmFFNtZM"
+ "CgCnhlvvLJgcRFNNBdCpWM"
+ ...]
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+\A
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+65
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+97
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+-1
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+-24
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+-1
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+26
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+-31
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+-31
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+5
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+35
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+27
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+52
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#function[clojure.core/=]
+clj꞉proj.d3꞉> 
+#function[clojure.core/=]
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+true
+clj꞉proj.d3꞉> 
+false
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+59
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+26
+clj꞉proj.d3꞉> 
+27
+clj꞉proj.d3꞉> 
+52
+clj꞉proj.d3꞉> 
+#'proj.d3/split
+clj꞉proj.d3꞉> 
+[(\A \B) (\C \D)]
+clj꞉proj.d3꞉> 
+; Evaluating file: d3.clj
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+; Execution error (ArityException) at proj.d3/eval11505 (form-init17885135873231967121.clj:12).
+; Wrong number of args (1) passed to: proj.d3/intersection
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+#{\C}
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (d3.clj:14).
+; class clojure.lang.PersistentHashSet cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentHashSet is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+#function[clojure.core/map/fn--5931]
+clj꞉proj.d3꞉> 
+#function[clojure.core/map/fn--5931]
+clj꞉proj.d3꞉> 
+#function[clojure.core/map/fn--5931]
+clj꞉proj.d3꞉> 
+([(\B \z \R \m \m \z \Z \H \z \V \B \z \g \V \Q \m \Z) (\L \P \t \q \q \f \f \P \q \W \q \J \m \P \L \l \L)]
+ [(\h \p \v \v \T \D \c \r \C \j \h \p \c \r \v \c \G \G \h)
+  (\f \L \H \M \l \L \t \M \C \q \f \l \N \l \W \P \J \l \J)]
+ [(\h \G \j \h \n \c \H \h \G \n \h \b \T \H \c) (\z \B \B \Z \V \V \S \b \R \w \g \S \g \R \V)]
+ [(\r \W \V \Q \j \P \Q \Q \j \G \R \W \N \S \r \W \r \P \j \c)
+  (\p \t \w \B \p \q \q \J \B \t \J \B \B \c \Z \g \M \d \t \q)]
+ [(\z \z \m \m \p \z \f \T \C \F \p \T \l) (\M \l \J \J \w \B \g \M \l \q \M \B \t)]
+ [(\T \v \L \s \z \p \b \h \h \T \L \m \s \n) (\R \Q \P \D \Q \G \W \D \W \R \v \Q \S \R)]
+ [(\z \G \z \v \L \l \G \l \Q \H \L \G \B \Q \Z \l) (\h \B \W \h \d \j \R \d \m \d \W \R \c \j \P \j)]
+ [(\f \T \J \N \f \T \f \N \S) (\R \W \P \h \j \d \j \f \j)]
+ [(\p \b \s \b \V \V \n \p \S \n \b \V \T \p \r \n \b) (\q \q \r \z \v \L \L \g \Q \l \G \L \P \L \H \l \l)]
+ [(\Z \C \C \C \s \W \v \N \v \m \s \C \s \C \m \Z \L \Z \m \g \M \L)
+  (\R \p \Q \M \h \w \Q \R \p \Q \R \f \p \h \f \p \r \p \T \f \p \M)]
+ [(\t \l \n \c \P \j \z \l \n \d \c \t \b \z \c \P \P \B \c \j)
+  (\w \D \p \h \w \r \f \G \G \D \f \f \b \D \R \p \D \T \G \G)]
+ [(\c \d \q \n \d \d \w \z \q \j) (\N \V \W \V \L \Z \Z \L \Z \q)]
+ [(\D \T \L \b \D \b \R \r \l \Q \b) (\w \h \h \N \r \m \m \f \w \d \t)]
+ [(\z \z \M \J \M \z \j \C \j \J \J \j \v \L \j \M \P \J \p \c \g \P \p \z)
+  (\f \h \H \d \f \q \W \c \q \d \d \w \t \w \f \q \d \t \t \c \N \t \d \N)]
+ [(\p \J \C \z \V \p \C \v) (\D \Z \B \L \s \V \R \Q)]
+ [(\S \T \z \B \B \b \J \z \R \R \B \Z \B \R \T \q) (\C \C \s \f \Z \L \t \N \N \L \C \l \C \s \f \h)]
+ [(\j \s \Q \n \n \Q \j \j \H \c \v \Q \F \r \c \P) (\w \C \m \t \L \C \N \l \v \D \f \f \t \f \f \f)]
+ [(\s \G \F \s \c \M \Q \Q \M) (\M \p \q \z \q \b \M \b \d)]
+ [(\Q \l \N \D \W \G \s \j \Q \j \g \Q \l \l \W \Q \s \b) (\t \z \q \T \J \c \z \T \J \c \b \F \m \m \F \J \J \P)]
+ [(\M \h \L \r \h \g \L \V \n \d \R) (\m \z \J \F \z \V \q \q \J \q \P)]
+ [(\p \S \L \n \M \d \w \h \w \d \R \Z \R \S \w \h \L \Z \w \L \h \d)
+  (\G \W \Q \j \l \s \g \W \j \N \Q \W \W \S \v \g \B \s \W \D \l \j)]
+ [(\T \H \j \S \R \F \S \d \d \T \j \d) (\B \T \c \P \L \c \V \V \v \V \B \w)]
+ [(\G \z \W \n \W \f \n \d \W \f \z \n \D \f) (\s \n \s \B \s \P \V \w \V \w \P \P \L \L)]
+ [(\z \N \f \l \z \J \W \q \q \z \Q \D \d) (\S \S \t \H \N \Z \N \p \F \F \t \b \j)]
+ [(\F \S \z \D \m \s \F \S \F \l \D \l \B \z \q) (\V \j \q \H \H \j \H \H \p \V \g \H \L \b \p)]
+ [(\r \T \r \T \t \T \Q \Q \n \t \R \Q \n \Q \J \Q) (\g \g \g \H \Z \t \t \V \g \H \L \B \L \h \Z \L)]
+ [(\W \T \J \J \R \R \Q \C \R \R \J \T \R \d \B \C \R \d \v \R)
+  (\N \D \F \S \W \F \M \P \m \D \l \P \P \S \s \N \P \S \z \S)]
+ [(\W \Q \l \d \l \M \t \M \V \Q \g \V \M \Q) (\H \n \D \G \b \H \G \G \n \R \n \Q \m \D)]
+ [(\r \q \c \Z \P \r \C \F) (\j \m \H \l \b \G \j \Z)]
+ [(\z \S \S \c \c \h \q \w \c \h \B \z \T \z \F \z \h \h \S \l \c \C \w)
+  (\N \t \d \V \W \W \J \g \s \V \d \M \t \W \N \g \N \V \W \T \J \T \d)]
+ [(\l \M \Z \q \j \M \W \l \l \r \T \T \s \p \j \p \r \W \W)
+  (\S \S \w \g \W \N \S \V \N \D \m \W \G \V \w \F \w \g \N)]
+ [(\c \d \C \C \d \L \H \c \n \n \d \H \J \n \m \C \R \n \t \L \B \n \R)
+  (\z \D \v \F \N \t \N \D \V \z \g \S \g \w \D \g \F \N \V \z \F \V \v)]
+ [(\B \R \L \c \C \C \J \C \m \J \d \c \R \h) (\f \j \P \P \Z \p \h \r \l \r \P \q \l \Z)]
+ [(\G \d \G \q \c \r \r \Z \G \D \r \v \D \J \J \q \J \H \c \B \v)
+  (\m \F \F \g \m \F \M \M \g \M \g \B \t \M \L \T \s \s \L \m \F)]
+ [(\N \b \P \V \P \D \l \l) (\j \P \m \T \m \s \T \j)]
+ [(\V \f \Q \D \h \f \l \C \C \R \W) (\d \c \r \Q \w \J \v \v \n \J \v)]
+ [(\R \L \c \W \g \L \C \q \q \P \Q \L \c \q \Z) (\w \z \H \g \w \m \m \r \m \m \t \g \w \T \w)]
+ [(\D \h \b \h \N \r \M \p \n \J \S \D \J) (\w \V \T \H \m \m \T \V \n \T \T \V \j)]
+ [(\l \r \s \v \b \l \M \D) (\l \c \W \c \f \Q \P \Q)]
+ [(\P \V \l \d \l \p \h \H \w \G \w \J \J \G \d \j \Z \Z) (\W \s \R \b \b \s \G \s \N \W \r \W \Q \b \N \b \Q \R)]
+ [(\S \q \c \D \v \T \m \D \L \t \f \m \S \m \t \q \p \p \f \q \z \T \g \T)
+  (\Q \B \r \R \Q \s \b \C \F \W \b \N \N \F \Q \F \B \B \r \R \b \L \N \b)]
+ [(\M \g \t \m \T \g \t \f \p \q) (\V \l \n \V \d \d \Z \M \w \V)]
+ [(\B \d \m \f \m \P \B \P \S \b \S \N \d \G \S \d) (\v \W \r \w \c \Z \r \c \c \Z \P \P \c \Z \n \H)]
+ [(\j \z \z \L \s \j \s \M \R \l \Q \Q \V) (\H \w \s \w \v \v \Z \r \C \H \r \r \T)]
+ [(\V \q \h \z \V \F \z \p \l \F \l \p \L \w \p \M \p \h \L \R \Q \Q \V \R)
+  (\m \S \q \g \b \d \G \t \N \J \B \m \N \S \m \g \G \b \t \g \g \S \g \t)]
+ [(\D \H \V \p \N \Z \j \d \Z \j \F \Z \W \V \F \H \p) (\v \F \v \z \m \l \R \z \P \n \l \f \z \n \F \R \z)]
+ [(\l \r \T \B \T \s \B \w \w \M \b \r \r) (\w \L \P \P \f \w \G \m \G \z \v \R \f)]
+ [(\s \c \r \t \M \h \M \C \t \J \B \B \B \c \l \b) (\H \d \H \t \t \W \Z \W \D \S \q \D \S \j \H \j)]
+ [(\w \z \q \s \P \m \q \s \b \s \f \q \B \w \P) (\M \N \R \M \M \Z \c \Z \m \F \F \N \t \Z \M)]
+ [(\C \g \C \n \h \l \v \v \L \J \g) (\c \R \F \N \N \B \d \C \p \W \M)]
+ ...)
+clj꞉proj.d3꞉> 
+(#{\m}
+ #{\C}
+ #{\b}
+ #{\c}
+ #{\l}
+ #{\v}
+ #{\B}
+ #{\f}
+ #{\r}
+ #{\M}
+ #{\b}
+ #{\q}
+ #{\r}
+ #{\c}
+ #{\V}
+ #{\Z}
+ #{\v}
+ #{\M}
+ #{\b}
+ #{\V}
+ #{\S}
+ #{\T}
+ #{\n}
+ #{\N}
+ #{\q}
+ #{\t}
+ #{\W}
+ #{\Q}
+ #{\Z}
+ #{\T}
+ #{\W}
+ #{\t}
+ #{\h}
+ #{\B}
+ #{\P}
+ #{\Q}
+ #{\g}
+ #{\n}
+ #{\l}
+ #{\G}
+ #{\L}
+ #{\M}
+ #{\P}
+ #{\s}
+ #{\q}
+ #{\F}
+ #{\w}
+ #{\t}
+ #{\m}
+ #{\C}
+ ...)
+clj꞉proj.d3꞉> 
+; Error printing return value (ClassCastException) at clojure.core/re-matcher (core.clj:4874).
+; class clojure.lang.PersistentHashSet cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentHashSet is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+(#{\m}
+ #{\C}
+ #{\b}
+ #{\c}
+ #{\l}
+ #{\v}
+ #{\B}
+ #{\f}
+ #{\r}
+ #{\M}
+ #{\b}
+ #{\q}
+ #{\r}
+ #{\c}
+ #{\V}
+ #{\Z}
+ #{\v}
+ #{\M}
+ #{\b}
+ #{\V}
+ #{\S}
+ #{\T}
+ #{\n}
+ #{\N}
+ #{\q}
+ #{\t}
+ #{\W}
+ #{\Q}
+ #{\Z}
+ #{\T}
+ #{\W}
+ #{\t}
+ #{\h}
+ #{\B}
+ #{\P}
+ #{\Q}
+ #{\g}
+ #{\n}
+ #{\l}
+ #{\G}
+ #{\L}
+ #{\M}
+ #{\P}
+ #{\s}
+ #{\q}
+ #{\F}
+ #{\w}
+ #{\t}
+ #{\m}
+ #{\C}
+ ...)
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (d3.clj:14).
+; class clojure.lang.PersistentHashSet cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentHashSet is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+2
+clj꞉proj.d3꞉> 
+3
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+2
+clj꞉proj.d3꞉> 
+3
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+; Execution error (NullPointerException) at java.util.regex.Matcher/getTextLength (Matcher.java:1779).
+; Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+clj꞉proj.d3꞉> 
+; Execution error (NullPointerException) at java.util.regex.Matcher/getTextLength (Matcher.java:1779).
+; Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+; Syntax error compiling at (src/proj/d3.clj:1:7969).
+; Unable to resolve symbol: ABCCDE in this context
+clj꞉proj.d3꞉> 
+#function[proj.d3/split]
+clj꞉proj.d3꞉> 
+[(\A \B \C) (\C \D \E)]
+clj꞉proj.d3꞉> 
+#function[proj.d3/intersection]
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+#{\C}
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/intersection (form-init17885135873231967121.clj:10).
+; Default comparator requires nil, Number, or Comparable: clojure.lang.LazySeq@170a1
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+(#{\C})
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+[\C]
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (d3.clj:14).
+; class clojure.lang.PersistentVector cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+; Syntax error compiling at (src/proj/d3.clj:12:1).
+; Unable to resolve symbol: head in this context
+clj꞉proj.d3꞉> 
+1
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+"Part 1"
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (d3.clj:14).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+\C
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+\C
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (d3.clj:14).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (form-init17885135873231967121.clj:16).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (form-init17885135873231967121.clj:16).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+\C
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+\C
+clj꞉proj.d3꞉> 
+#function[proj.d3/priority]
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (form-init17885135873231967121.clj:16).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/eval11617 (form-init17885135873231967121.clj:12).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+#'proj.d3/split
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/eval11620 (form-init17885135873231967121.clj:20).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+"C"
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+; Execution error (IllegalArgumentException) at proj.d3/priority (form-init17885135873231967121.clj:15).
+; No matching method charAt found taking 1 args for class java.lang.Character
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+((\A \B) (\C \D) (\E \F) (\G))
+clj꞉proj.d3꞉> 
+(([(\B \z \R \m \m \z \Z \H \z \V \B \z \g \V \Q \m \Z) (\L \P \t \q \q \f \f \P \q \W \q \J \m \P \L \l \L)]
+  [(\h \p \v \v \T \D \c \r \C \j \h \p \c \r \v \c \G \G \h)
+   (\f \L \H \M \l \L \t \M \C \q \f \l \N \l \W \P \J \l \J)]
+  [(\h \G \j \h \n \c \H \h \G \n \h \b \T \H \c) (\z \B \B \Z \V \V \S \b \R \w \g \S \g \R \V)])
+ ([(\r \W \V \Q \j \P \Q \Q \j \G \R \W \N \S \r \W \r \P \j \c)
+   (\p \t \w \B \p \q \q \J \B \t \J \B \B \c \Z \g \M \d \t \q)]
+  [(\z \z \m \m \p \z \f \T \C \F \p \T \l) (\M \l \J \J \w \B \g \M \l \q \M \B \t)]
+  [(\T \v \L \s \z \p \b \h \h \T \L \m \s \n) (\R \Q \P \D \Q \G \W \D \W \R \v \Q \S \R)])
+ ([(\z \G \z \v \L \l \G \l \Q \H \L \G \B \Q \Z \l) (\h \B \W \h \d \j \R \d \m \d \W \R \c \j \P \j)]
+  [(\f \T \J \N \f \T \f \N \S) (\R \W \P \h \j \d \j \f \j)]
+  [(\p \b \s \b \V \V \n \p \S \n \b \V \T \p \r \n \b) (\q \q \r \z \v \L \L \g \Q \l \G \L \P \L \H \l \l)])
+ ([(\Z \C \C \C \s \W \v \N \v \m \s \C \s \C \m \Z \L \Z \m \g \M \L)
+   (\R \p \Q \M \h \w \Q \R \p \Q \R \f \p \h \f \p \r \p \T \f \p \M)]
+  [(\t \l \n \c \P \j \z \l \n \d \c \t \b \z \c \P \P \B \c \j)
+   (\w \D \p \h \w \r \f \G \G \D \f \f \b \D \R \p \D \T \G \G)]
+  [(\c \d \q \n \d \d \w \z \q \j) (\N \V \W \V \L \Z \Z \L \Z \q)])
+ ([(\D \T \L \b \D \b \R \r \l \Q \b) (\w \h \h \N \r \m \m \f \w \d \t)]
+  [(\z \z \M \J \M \z \j \C \j \J \J \j \v \L \j \M \P \J \p \c \g \P \p \z)
+   (\f \h \H \d \f \q \W \c \q \d \d \w \t \w \f \q \d \t \t \c \N \t \d \N)]
+  [(\p \J \C \z \V \p \C \v) (\D \Z \B \L \s \V \R \Q)])
+ ([(\S \T \z \B \B \b \J \z \R \R \B \Z \B \R \T \q) (\C \C \s \f \Z \L \t \N \N \L \C \l \C \s \f \h)]
+  [(\j \s \Q \n \n \Q \j \j \H \c \v \Q \F \r \c \P) (\w \C \m \t \L \C \N \l \v \D \f \f \t \f \f \f)]
+  [(\s \G \F \s \c \M \Q \Q \M) (\M \p \q \z \q \b \M \b \d)])
+ ([(\Q \l \N \D \W \G \s \j \Q \j \g \Q \l \l \W \Q \s \b) (\t \z \q \T \J \c \z \T \J \c \b \F \m \m \F \J \J \P)]
+  [(\M \h \L \r \h \g \L \V \n \d \R) (\m \z \J \F \z \V \q \q \J \q \P)]
+  [(\p \S \L \n \M \d \w \h \w \d \R \Z \R \S \w \h \L \Z \w \L \h \d)
+   (\G \W \Q \j \l \s \g \W \j \N \Q \W \W \S \v \g \B \s \W \D \l \j)])
+ ([(\T \H \j \S \R \F \S \d \d \T \j \d) (\B \T \c \P \L \c \V \V \v \V \B \w)]
+  [(\G \z \W \n \W \f \n \d \W \f \z \n \D \f) (\s \n \s \B \s \P \V \w \V \w \P \P \L \L)]
+  [(\z \N \f \l \z \J \W \q \q \z \Q \D \d) (\S \S \t \H \N \Z \N \p \F \F \t \b \j)])
+ ([(\F \S \z \D \m \s \F \S \F \l \D \l \B \z \q) (\V \j \q \H \H \j \H \H \p \V \g \H \L \b \p)]
+  [(\r \T \r \T \t \T \Q \Q \n \t \R \Q \n \Q \J \Q) (\g \g \g \H \Z \t \t \V \g \H \L \B \L \h \Z \L)]
+  [(\W \T \J \J \R \R \Q \C \R \R \J \T \R \d \B \C \R \d \v \R)
+   (\N \D \F \S \W \F \M \P \m \D \l \P \P \S \s \N \P \S \z \S)])
+ ([(\W \Q \l \d \l \M \t \M \V \Q \g \V \M \Q) (\H \n \D \G \b \H \G \G \n \R \n \Q \m \D)]
+  [(\r \q \c \Z \P \r \C \F) (\j \m \H \l \b \G \j \Z)]
+  [(\z \S \S \c \c \h \q \w \c \h \B \z \T \z \F \z \h \h \S \l \c \C \w)
+   (\N \t \d \V \W \W \J \g \s \V \d \M \t \W \N \g \N \V \W \T \J \T \d)])
+ ([(\l \M \Z \q \j \M \W \l \l \r \T \T \s \p \j \p \r \W \W)
+   (\S \S \w \g \W \N \S \V \N \D \m \W \G \V \w \F \w \g \N)]
+  [(\c \d \C \C \d \L \H \c \n \n \d \H \J \n \m \C \R \n \t \L \B \n \R)
+   (\z \D \v \F \N \t \N \D \V \z \g \S \g \w \D \g \F \N \V \z \F \V \v)]
+  [(\B \R \L \c \C \C \J \C \m \J \d \c \R \h) (\f \j \P \P \Z \p \h \r \l \r \P \q \l \Z)])
+ ([(\G \d \G \q \c \r \r \Z \G \D \r \v \D \J \J \q \J \H \c \B \v)
+   (\m \F \F \g \m \F \M \M \g \M \g \B \t \M \L \T \s \s \L \m \F)]
+  [(\N \b \P \V \P \D \l \l) (\j \P \m \T \m \s \T \j)]
+  [(\V \f \Q \D \h \f \l \C \C \R \W) (\d \c \r \Q \w \J \v \v \n \J \v)])
+ ([(\R \L \c \W \g \L \C \q \q \P \Q \L \c \q \Z) (\w \z \H \g \w \m \m \r \m \m \t \g \w \T \w)]
+  [(\D \h \b \h \N \r \M \p \n \J \S \D \J) (\w \V \T \H \m \m \T \V \n \T \T \V \j)]
+  [(\l \r \s \v \b \l \M \D) (\l \c \W \c \f \Q \P \Q)])
+ ([(\P \V \l \d \l \p \h \H \w \G \w \J \J \G \d \j \Z \Z) (\W \s \R \b \b \s \G \s \N \W \r \W \Q \b \N \b \Q \R)]
+  [(\S \q \c \D \v \T \m \D \L \t \f \m \S \m \t \q \p \p \f \q \z \T \g \T)
+   (\Q \B \r \R \Q \s \b \C \F \W \b \N \N \F \Q \F \B \B \r \R \b \L \N \b)]
+  [(\M \g \t \m \T \g \t \f \p \q) (\V \l \n \V \d \d \Z \M \w \V)])
+ ([(\B \d \m \f \m \P \B \P \S \b \S \N \d \G \S \d) (\v \W \r \w \c \Z \r \c \c \Z \P \P \c \Z \n \H)]
+  [(\j \z \z \L \s \j \s \M \R \l \Q \Q \V) (\H \w \s \w \v \v \Z \r \C \H \r \r \T)]
+  [(\V \q \h \z \V \F \z \p \l \F \l \p \L \w \p \M \p \h \L \R \Q \Q \V \R)
+   (\m \S \q \g \b \d \G \t \N \J \B \m \N \S \m \g \G \b \t \g \g \S \g \t)])
+ ([(\D \H \V \p \N \Z \j \d \Z \j \F \Z \W \V \F \H \p) (\v \F \v \z \m \l \R \z \P \n \l \f \z \n \F \R \z)]
+  [(\l \r \T \B \T \s \B \w \w \M \b \r \r) (\w \L \P \P \f \w \G \m \G \z \v \R \f)]
+  [(\s \c \r \t \M \h \M \C \t \J \B \B \B \c \l \b) (\H \d \H \t \t \W \Z \W \D \S \q \D \S \j \H \j)])
+ ([(\w \z \q \s \P \m \q \s \b \s \f \q \B \w \P) (\M \N \R \M \M \Z \c \Z \m \F \F \N \t \Z \M)]
+  [(\C \g \C \n \h \l \v \v \L \J \g) (\c \R \F \N \N \B \d \C \p \W \M)]
+  [(\Q \n \Q \r \V \g \H \S \v \V \H) (\j \b \j \T \G \B \b \b \T \H \b)])
+ ([(\H \d \r \V \r \d \q \F \D \d \Z \V \m \H \g \R \m \D \R \F \H)
+   (\M \n \T \d \T \s \s \M \G \n \L \n \P \J \L \b \P \T \b \C \s)]
+  [(\S \c \z \l \S \c \j \w \c \N \z \p \l \N \z \Q \S \S \f \j \w \Q \S)
+   (\r \T \G \G \s \b \T \s \n \T \C \n \G \T \M \C \M \L \M \G \G \b \N)]
+  [(\w \Q \l \f \j \r \h \f \h \Q) (\F \H \q \Z \h \R \Z \R \t \D)])
+ ([(\R \s \f \J \D \G \J \v \z \P \N) (\c \j \p \d \d \S \W \J \W \M \d)]
+  [(\L \L \C \b \B \C \w \C \r \C \m \V \V \n \r \m \h \Q \F \m \b \V \h)
+   (\d \c \d \l \W \p \j \Z \z \S \p \M \d \W \S \p \c \W \c \z \S \B \j)]
+  [(\r \r \L \C \b \T \w \n) (\H \T \v \z \v \N \G \T)])
+ ([(\w \P \h \P \h \b \C \q \q \S \C) (\r \t \J \D \l \q \v \l \r \J \r)]
+  [(\R \V \V \Z \d \d \L \F \R \Z \Z \c \Q) (\L \v \J \J \t \z \p \t \l \g \P \J \p)]
+  [(\T \V \Q \R \Z \G \V \n \c \F \d \T \G \W \Z \d) (\C \N \S \h \H \h \f \P \N \w \w \s \W \P \w \b)])
+ ([(\d \z \L \V \z \P \S \g \r \g \D \D \D \C \M \S \M \L \L \P)
+   (\w \F \m \d \T \T \c \s \v \m \w \N \w \j \N \s \H \c \F \F)]
+  [(\n \W \B \G \n \t \Q \f \G \N \G \B \f \l \W \B \B \q \l \p \R \Q \G)
+   (\b \W \F \v \j \w \s \b \s \F \s \w \b \v \T \H \j \j \b \m \H \T \c)]
+  [(\t \B \N \J \B \n \G \B \f \l \Q \n) (\D \P \J \r \P \h \D \g \r \P \V \g)])
+ ([(\V \t \W \z \t \W \t \q \p \q \z \W \p \W \z \q \j \N \R \j \N \p \W \T)
+   (\m \r \r \m \r \S \b \n \m \J \w \S \J \w \n \M \P \r \C \S \J \V \w \M)]
+  [(\s \D \H \s \B \D \h \B \d \s \B \Z \G \c \H \v \L \H \D \L \h \h)
+   (\C \S \n \R \S \w \C \J \M \Z \r \P \b \m \n \M \b \J \S \C \S \R)]
+  [(\c \c \L \R \h \g \s \L \B \d \R \s \d \H) (\N \T \F \F \N \N \g \q \T \g \l \q \z \F)])
+ ([(\h \z \t \l \m \D \h \P \h \g \P \l \P \N \N \g \m \Z) (\M \C \b \m \w \w \Q \j \c \w \j \j \w \M \j \V \C \d)]
+  [(\R \S \J \R \r \R \q \n \q \Q \J \F \q \v \n \T \G \r) (\H \C \c \H \H \C \C \H \H \b \H \H \M \c \M \v \d \M)]
+  [(\q \G \J \s \n \Q \T \R \s \S) (\t \s \f \t \P \l \h \P \N \l)])
+ ([(\B \F \F \B \L \P \R \C \w \s \L \w \h \l \P \l \R) (\m \h \c \G \G \r \b \m \m \G \j \f \N \T \T \n \p)]
+  [(\V \J \M \V \p \z \g \q \g \g \J) (\n \r \j \m \j \N \c \M \j \m \T)]
+  [(\V \q \d \S \Z \t \Q \g \Z \v \t \d \z \q \H \q \H \t \V \Z \d \V \Q)
+   (\p \C \D \W \W \F \d \w \l \R \P \D \p \W \P \P \B \C \s \w \l \W \D)])
+ ([(\f \C \W \C \s \j \P \z \c \b \z \w \R) (\S \z \V \T \z \h \h \D \L \q \v \d \g)]
+  [(\T \m \J \t \r \N \J \r) (\B \L \S \L \J \q \g \S)]
+  [(\p \t \N \T \Q \F \H \r \Z \l \n \p \F) (\P \w \s \W \M \b \R \j \C \p \c \j \R)])
+ ([(\n \J \m \Q \N \C \m \b \m \l \l \l \m \b \C \l) (\b \f \M \L \j \M \F \q \b \G \B \s \d \L \F \q)]
+  [(\Z \c \g \T \W \c \T \n) (\M \q \q \M \T \B \q \F)]
+  [(\t \P \g \c \t \S \n \P \c \t \Z \Z \g \D \W \z \Z \g) (\Q \H \w \N \m \H \l \h \l \m \z \l \Q \h \l \J \l \w)])
+ ([(\Z \p \T \C \w \p \f \f \d \s \l) (\v \g \S \h \C \B \h \q \h \R \z)]
+  [(\F \D \M \P \n \N \F \N \m) (\B \P \z \v \R \P \R \B \g)]
+  [(\n \N \g \M \r \n \n \D \G \j \D \m \J \M \m \n \F) (\d \Z \T \T \s \d \s \r \Z \r \s \l \c \w \c \Q \r)])
+ ([(\p \T \m \c \z \p \C \l \d \c \d \D \D) (\n \P \t \t \p \v \W \S \q \b \p \J \f)]
+  [(\j \g \j \R \Z \M \G \H \h \G \L \g \Q \r \j) (\v \P \W \z \P \J \g \J \v \z \S \t \b \b \q)]
+  [(\L \G \N \L \L \N \B \B \z) (\c \D \F \C \B \w \w \F \C)])
+ ([(\n \J \T \T \q \n \r \N \v \T \z \N \M \z \z \N \f \q \r \T \P \r \J \n)
+   (\w \p \w \P \p \Z \p \s \H \c \c \Z \V \s \B \R \p \c \V \H \w \p \c \p)]
+  [(\b \g \D \h \g \b \g \h \L \W \m \F \m \S \t) (\c \t \V \p \Z \t \B \C \V \C \C \p \f \Z \p)]
+  [(\L \L \S \g \L \G \S \j \g \g \F \G \b \S \S \b \m) (\M \n \r \v \q \v \z \j \f \z \T \N \r \J \r \q \M)])
+ ([(\R \R \p \D \m \m \P \M \T) (\j \w \f \G \m \J \Q \g \Q)]
+  [(\W \s \N \s \c \d \n \v \v \d \V \Z \F \V \n \n \r \Z) (\b \j \j \f \l \w \l \j \l \b \z \f \G \F \j \Q \j \q)]
+  [(\N \n \L \Z \s \N \n \r \r \V \V \V \c \v \d \B \L) (\T \P \C \P \C \R \M \w \h \P \M \B \M \P \h \C \t)])
+ ([(\l \b \V \v \z \n \g \G \J \n \V \b \J) (\H \p \H \t \H \N \P \p \d \S \Q \v \c)]
+  [(\T \s \M \B \s \w \F \Z \s \W \M \W \B \Z \M) (\N \w \P \t \N \N \t \R \N \H \c \N \p \S \Q)]
+  [(\C \c \Z \C \T \r \Z \D \s \j \Z \T \s \T \s \s \h \W \h \r \W \r \T)
+   (\n \f \g \b \L \D \f \J \z \V \V \L \V \V \l \g \f \n \z \f \V \G \V)])
+ ([(\J \z \T \T \R \t \J \R \Z) (\W \m \W \j \r \M \H \C \T)]
+  [(\D \D \F \G \l \L \G \c \G \l \S \S \S \L \s \F \G \B \s \p \P)
+   (\B \m \N \M \B \H \M \g \h \m \W \N \m \W \j \W \C \m \W \t \H)]
+  [(\n \S \S \p \n \b \s \G \l \L \D \n \p \P \s \S \S \s \p \F \t)
+   (\V \v \f \f \R \Q \d \V \z \q \v \v \b \q \d \f \V \Q \w \R \z)])
+ ([(\s \M \h \z \s \z \l \H \H \D \s \W \b \t \h \H \D \q \s \b)
+   (\J \j \p \L \N \t \m \j \V \J \m \V \L \L \V \L \V \L \B \p)]
+  [(\n \r \T \P \r \G \w \f \P) (\L \d \p \r \z \J \z \d \L)]
+  [(\w \g \P \Q \c \T \G \G \z \g \c \c \w \C \g \n \R \w \g \R \C)
+   (\h \F \h \l \W \S \D \q \W \W \Q \M \W \h \s \s \S \s \M \Q \l)])
+ ([(\N \S \N \m \w \t \p \S \p) (\C \p \v \M \p \h \C \s \r)]
+  [(\P \H \c \R \G \P \L \J) (\M \r \s \v \z \s \q \G)]
+  [(\Q \H \j \b \n \R \M \c \f \b \P \b) (\Q \Z \m \l \Z \g \Z \l \g \B \B \Q)])
+ ([(\c \P \R \P \b \h \Q \j \b \Q \R \d \t \P \Q \d) (\L \q \L \H \q \z \F \Z \j \C \F \C \q \L \j \C)]
+  [(\m \m \f \s \n \n \w \r \f \v \w \r \f \S \N \Z) (\F \z \H \H \L \D \C \F \N \l \L \l \q \D \l \N)]
+  [(\w \s \m \r \w \s \w \w \G \T \f \f \M \r \B \n \m) (\Q \t \t \J \t \c \M \Z \Q \Q \t \P \J \P \b \Z \c)])
+ ([(\M \v \B \P \D \D \R \R \d \n \n \v) (\H \P \C \H \Z \L \H \Z \s \F \L \L)]
+  [(\r \m \J \c \b \V \q \b \c \j \W \w \W \j \Q) (\H \L \z \T \Z \F \T \H \S \z \F \r \p \s \z)]
+  [(\c \m \w \l \l \V \q \q \G \J \b \V \V \V \m \m \q \b \Q \c \m)
+   (\g \R \n \R \v \G \h \G \f \g \D \R \D \Z \B \B \B \v \R \d \d)])
+ ([(\n \M \v \M \h \M \n \v \h \n \b \T \Z \W \S \S \Z \g \H)
+   (\m \G \J \D \F \m \m \N \D \z \B \m \b \N \m \d \G \B \N)]
+  [(\r \C \s \P \L \R \C \s \s \R \j \r \L \L \s \r \L \l \w \R \V \r \c)
+   (\N \J \Q \f \D \Q \f \d \B \m \m \f \N \B \G \J \N \z \m \D \P \f \B)]
+  [(\C \R \j \C \p \L \l \t) (\g \t \J \g \J \J \W \q)])
+ ([(\j \s \h \C \z \J \p \j \z \T \P \p \m \C) (\W \v \S \l \p \f \w \H \f \S \W \g \l \f)]
+  [(\L \Q \M \M \N \M \n \H \t \D \t \L \V) (\R \v \w \w \g \R \W \l \l \d \g \W \D)]
+  [(\q \H \V \r \Q \N \H \V \M \F \Q \t \r \r \B \B \Q \M \B \c \r \r)
+   (\Z \s \Z \b \z \C \Z \h \b \b \J \Z \J \s \m \m \s \m \F \P \T \C)])
+ ([(\J \Z \Q \Z \n \s \Q \N \M \q \T \n \g \Z \q \J) (\B \V \f \B \f \P \P \V \B \N \r \w \v \f \P \w)]
+  [(\S \S \m \D \s \t \F \j \p \D \p \C \s \z \D \j \c \L \L)
+   (\h \r \P \V \l \G \l \r \G \G \V \B \w \r \v \w \V \P \t)]
+  [(\F \S \s \s \F \c \L \j \F \j \b \m \F \F \C \z \j \L \c \F \L \R \D)
+   (\n \M \J \n \T \H \R \n \Z \Z \T \d \W \q \Z \Z \W \n \M \n \R \n \Z)])
+ ([(\G \b \H \R \H \p \l \d \w \G \M \p \W \h \H \p \C \M \B \l \C \b \R \d)
+   (\V \S \L \h \n \q \J \L \S \r \D \P \L \P \P \L \P \D \q \V \D \r \h \h)]
+  [(\g \v \j \W \W \Q \v \g \Z \F \t \Q \F \F \N) (\q \L \n \V \n \D \n \S \J \z \z \z \t \D \D)]
+  [(\Z \c \c \c \c \f \T \s \f \f) (\H \d \W \W \d \R \W \w \s \w)])
+ ([(\C \l \C \t \b \H \M \l) (\n \n \P \P \l \s \z \V)]
+  [(\g \S \D \W \S \L \g \W \Q \W \Q \J \J \N \W \q \g \t \Q \j)
+   (\P \s \n \f \c \d \V \c \L \V \d \V \d \z \f \z \V \z \f \f)]
+  [(\W \Q \g \q \t \F \Q \g \D \g \Q \S \F \q \J \h \q \h \S \J \v \N \D)
+   (\R \r \Z \M \Z \H \w \H \M \C \b \Z \h \T \p \Z \b \G \H \M \T \M \G)])
+ ([(\p \Z \J \Z \l \C \Q \t \H) (\F \h \P \f \d \N \f \C \h)]
+  [(\z \c \m \L \S \V \c \z \w \c \M \c) (\L \D \N \F \H \d \L \P \h \P \W \H)]
+  [(\s \z \v \V \V \n \B \m) (\n \T \G \Q \t \H \T \Q)])
+ ([(\R \V \V \C \N \D \l \N \G \z \l \G \Z) (\q \H \G \H \W \q \W \h \G \q \Q \w \H)]
+  [(\Z \F \L \F \T \m \p \L) (\v \v \m \S \q \s \b \b)]
+  [(\T \r \f \p \B \f \J \p \J) (\M \l \n \n \N \f \N \Z \D)])
+ ([(\q \H \H \l \D \C \l \H \h \l \t \M \q \Q \s \H \D \h \H \s \l)
+   (\G \z \n \w \d \T \n \z \z \w \D \G \S \d \f \n \w \G \n \w \G)]
+  [(\m \Z \R \N \c \N \c \L \L \P \N \P \B \F \F \b \b \P \m \L \m \b \Z \F)
+   (\S \C \V \f \J \J \T \V \n \d \V \f \S \w \n \R \z \z \n \f \T \w \C \S)]
+  [(\C \c \C \W \F \b \b \B \L \C \W) (\t \g \W \g \H \j \g \h \q \v \v)])
+ ([(\T \j \b \z \l \n \l \F \m \f) (\q \C \F \F \V \V \C \R \W \r)]
+  [(\P \h \M \c \L \p \P \D \t \M \L \p \w \P \D \v \L \P \J \b \M \h)
+   (\S \g \V \C \G \q \g \g \V \q \Q \g \C \q \C \g \C \g \S \W \v \v)]
+  [(\b \t \b \Z \b \N \Z \h \J \D \J \J \h \D \t \w \t) (\s \T \T \T \m \B \z \z \B \B \m \l \N \l \m \H \j)])
+ ([(\F \q \h \j \W \t \q \l \q \m \m \s \n \F) (\P \T \C \v \M \C \Q \M \T \T \C \j \Q \d)]
+  [(\p \f \f \f \R \f \L \p \g \r \g \G \g \z \r \N \V \z \z \p \G \V \z \R)
+   (\C \d \M \C \P \J \b \w \w \c \V \M \b \Q \P \C \J \V \M \V \d \b \w \w)]
+  [(\D \G \G \D \Z \R \G \r \H \g \g \z) (\S \s \F \Q \n \n \W \S \h \m \t \H)])
+ ([(\v \t \H \V \V \M \M \r \v \V \M \V \r \S \H \v \L \g \v \l \H)
+   (\c \Z \F \C \n \R \C \Z \c \c \c \Z \t \R \R \Z \f \J \F \C \J)]
+  [(\r \d \D \j \G \s \d \T \Q \D) (\c \N \Z \f \d \n \c \C \R \R)]
+  [(\r \B \D \s \T \w \B \b \j \b \m \b \b \Q \s \w \s \w \P)
+   (\h \q \V \m \m \S \v \p \V \h \l \v \v \q \M \h \H \h \h)])
+ ([(\v \G \B \L \r \q \M \N \v \q \S \L \B \v \v \r \N \b \l \l \L)
+   (\H \f \w \S \t \W \W \t \F \t \t \c \c \j \t \R \t \j \t \c \j)]
+  [(\M \h \C \D \J \m \h \M \D \z \m) (\c \R \R \c \j \z \W \f \z \t \H)]
+  [(\Z \Q \D \m \D \h \V \V \C \Q) (\b \B \V \d \V \N \M \v \v \v)])
+ ([(\p \t \C \t \C \z \h \W \P \W \p \t \n \h \V \z \z \p) (\G \Z \b \Z \T \j \T \j \V \j \F \G \j \V \F \g \V \l)]
+  [(\f \Q \s \w \R \R \f \f \m \R \q \Z) (\l \g \r \q \q \F \j \j \S \g \G \g)]
+  [(\H \w \s \Q \D \N \N \s \D \s \m \R \L \L \H \m \f \f \s \f \v \H)
+   (\p \t \B \n \h \t \z \C \v \h \W \p \Z \W \B \d \h \n \M \d \C \h)])
+ ([(\R \l \H \z \z \T \q \c \z) (\B \P \f \b \n \v \c \p \B)]
+  [(\w \V \t \N \w \p \S \Z \s \t \p \p \w \w \M \s \Z \h \s)
+   (\d \n \L \v \n \b \t \B \B \m \b \n \L \F \F \d \n \m \F)]
+  [(\W \N \Q \J \M \V \W \s \Z \W \w \G \J \W \h \h \S \N) (\r \Q \z \l \g \H \r \D \C \g \Q \R \H \p \C \H \r \l)])
+ ...)
+clj꞉proj.d3꞉> 
+([(\B \z \R \m \m \z \Z \H \z \V \B \z \g \V \Q \m \Z) (\L \P \t \q \q \f \f \P \q \W \q \J \m \P \L \l \L)]
+ [(\h \p \v \v \T \D \c \r \C \j \h \p \c \r \v \c \G \G \h)
+  (\f \L \H \M \l \L \t \M \C \q \f \l \N \l \W \P \J \l \J)]
+ [(\h \G \j \h \n \c \H \h \G \n \h \b \T \H \c) (\z \B \B \Z \V \V \S \b \R \w \g \S \g \R \V)])
+clj꞉proj.d3꞉> 
+("BzRmmzZHzVBzgVQmZLPtqqffPqWqJmPLlL" "hpvvTDcrCjhpcrvcGGhfLHMlLtMCqflNlWPJlJ" "hGjhncHhGnhbTHczBBZVVSbRwgSgRV")
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection2
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/eval11652 (form-init17885135873231967121.clj:31).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection2
+clj꞉proj.d3꞉> 
+[]
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection2
+clj꞉proj.d3꞉> 
+#{}
+clj꞉proj.d3꞉> 
+#{}
+clj꞉proj.d3꞉> 
+#{}
+clj꞉proj.d3꞉> 
+#{}
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+"ABC"
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+"ABC"
+clj꞉proj.d3꞉> 
+"ABC"
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection2
+clj꞉proj.d3꞉> 
+#{\C}
+clj꞉proj.d3꞉> 
+#{\C}
+clj꞉proj.d3꞉> 
+#{\H}
+clj꞉proj.d3꞉> 
+34
+clj꞉proj.d3꞉> 
+0
+clj꞉proj.d3꞉> 
+0
+clj꞉proj.d3꞉> 
+34
+clj꞉proj.d3꞉> 
+; Execution error (IllegalArgumentException) at proj.d3/intersection2 (form-init17885135873231967121.clj:13).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉proj.d3꞉> 
+; Execution error (IllegalArgumentException) at proj.d3/intersection2 (form-init17885135873231967121.clj:13).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉proj.d3꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉proj.d3꞉> 
+(#{\H}
+ #{\p}
+ #{\P}
+ #{\w}
+ #{\L}
+ #{\s}
+ #{\g}
+ #{\d}
+ #{\B}
+ #{\l}
+ #{\m}
+ #{\D}
+ #{\r}
+ #{\p}
+ #{\w}
+ #{\l}
+ #{\B}
+ #{\r}
+ #{\z}
+ #{\P}
+ #{\N}
+ #{\R}
+ #{\Q}
+ #{\p}
+ #{\T}
+ #{\n}
+ #{\g}
+ #{\z}
+ #{\f}
+ #{\w}
+ #{\c}
+ #{\t}
+ #{\z}
+ #{\M}
+ #{\Z}
+ #{\Z}
+ #{\J}
+ #{\H}
+ #{\s}
+ #{\W}
+ #{\t}
+ #{\H}
+ #{\Z}
+ #{\C}
+ #{\b}
+ #{\Q}
+ #{\r}
+ #{\M}
+ #{\Z}
+ #{\p}
+ ...)
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (form-init17885135873231967121.clj:14).
+; class clojure.lang.PersistentHashSet cannot be cast to class java.lang.Character (clojure.lang.PersistentHashSet is in unnamed module of loader 'app'; java.lang.Character is in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+0
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (form-init17885135873231967121.clj:14).
+; class clojure.lang.PersistentHashSet cannot be cast to class java.lang.Character (clojure.lang.PersistentHashSet is in unnamed module of loader 'app'; java.lang.Character is in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection2
+clj꞉proj.d3꞉> 
+2798
+clj꞉proj.d3꞉> 
+; Syntax error compiling at (src/proj/d3.clj:10:37).
+; Unable to resolve symbol: a in this context
+clj꞉proj.d3꞉> 
+; Syntax error compiling at (src/proj/d3.clj:10:37).
+; Unable to resolve symbol: a in this context
+clj꞉proj.d3꞉> 
+#'proj.d3/setify
+clj꞉proj.d3꞉> 
+(#{\A \B \C} #{\C \D \E} #{\C})
+clj꞉proj.d3꞉> 
+#'proj.d3/setify
+clj꞉proj.d3꞉> 
+#{\C}
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (form-init17885135873231967121.clj:14).
+; class clojure.lang.LazySeq cannot be cast to class java.lang.Character (clojure.lang.LazySeq is in unnamed module of loader 'app'; java.lang.Character is in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+\C
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/priority (form-init17885135873231967121.clj:14).
+; class java.lang.String cannot be cast to class java.lang.Character (java.lang.String and java.lang.Character are in module java.base of loader 'bootstrap')
+clj꞉proj.d3꞉> 
+2798
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+; Execution error (ArityException) at proj.d3/eval11735 (form-init17885135873231967121.clj:27).
+; Wrong number of args (1) passed to: proj.d3/parse
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+; Execution error (IllegalArgumentException) at proj.d3/parse (form-init17885135873231967121.clj:20).
+; Don't know how to create ISeq from: clojure.core$map$fn__5931$fn__5932
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/parse (form-init17885135873231967121.clj:17).
+; class clojure.lang.PersistentList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+; Execution error (ArityException) at proj.d3/eval11747 (form-init17885135873231967121.clj:23).
+; Wrong number of args (0) passed to: proj.d3/parse
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+2798
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+; Execution error (ArityException) at proj.d3/eval11773 (form-init17885135873231967121.clj:25).
+; Wrong number of args (1) passed to: proj.d3/parse
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+; Execution error (IllegalArgumentException) at proj.d3/eval11791 (form-init17885135873231967121.clj:28).
+; Don't know how to create ISeq from: clojure.core$map$fn__5931$fn__5932
+clj꞉proj.d3꞉> 
+; Execution error (ClassCastException) at proj.d3/parse (form-init17885135873231967121.clj:8).
+; class clojure.lang.PersistentList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+2798
+clj꞉proj.d3꞉> 
+#'proj.d3/intersection
+clj꞉proj.d3꞉> 
+#'proj.d3/priority
+clj꞉proj.d3꞉> 
+#'proj.d3/parse
+clj꞉proj.d3꞉> 
+#'proj.d3/split
+clj꞉proj.d3꞉> 
+nil
+clj꞉proj.d3꞉> 
+7824
+clj꞉proj.d3꞉> 
+2798
+clj꞉proj.d3꞉> 
